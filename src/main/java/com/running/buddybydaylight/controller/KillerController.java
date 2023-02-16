@@ -1,9 +1,7 @@
 package com.running.buddybydaylight.controller;
 
-
 import com.running.buddybydaylight.exception.UserNotFoundException;
 import com.running.buddybydaylight.model.Killers;
-import com.running.buddybydaylight.model.User;
 import com.running.buddybydaylight.service.KillerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

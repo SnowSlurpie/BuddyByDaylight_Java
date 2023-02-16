@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Killers Page</title>
+    <title>Manage Killers</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css">
 </head>
 <body>
+<div class="container-fluid text-center">
+    <div><h2>Killers Table</h2></div>
+    <div class="m-2">
+        <a class="h3 " th:href="@{/killers/new}">Add New Killer</a>
+    </div>
 
+    <div th:if="${message}" class="alert alert-success text-center">
+        [[${message}]]
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead class="bg-dark text-white">
+            <tr>
+                <th>ID</th>
+                <th>Killer Name</th>
+                <th>Killer's Description</th>
+                <th>Killer's Power</th>
+                <th>Power Description</th>
+                <th>Perks</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <th:block th:each="killers : ${listKillers}">
+
+                <tr>
+                    <td>[[${killers.id}]]</td>
+                    <td>[[${killers.kName}]]</td>
+                    <td>[[${killers.kDesc}]]</td>
+                    <td>[[${killers.powerName}]]</td>
+                    <td>[[${killers.powerDesc}]]</td>
+                    <td>[[${killers.kPerk}]]</td>
+                    <td>
+                        <a class="h4 me-4" th:href="@{'/killers/edit/' + ${killers.id}}">Edit</a>
+                        <a class="h4" th:href="@{'/killers/delete/' + ${killers.id}}">Delete</a>
+                    </td>
+                </tr>
+
+            </th:block>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
 </body>
 </html>

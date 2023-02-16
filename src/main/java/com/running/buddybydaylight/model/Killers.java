@@ -11,13 +11,19 @@ public class Killers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
 
+    @Column(nullable = false, unique = true)
     private String kName;
 
+    @Column(nullable = false, unique = true)
     private String kDesc;
 
+    @Column(nullable = false, unique = true)
     private String powerName;
+
+    @Column(nullable = false, unique = true)
     private String powerDesc;
 
+    @Column(nullable = false, unique = true)
     private String kPerk;
 
     public Killers(Integer id, String kName, String kDesc, String powerName, String powerDesc, String kPerk) {
