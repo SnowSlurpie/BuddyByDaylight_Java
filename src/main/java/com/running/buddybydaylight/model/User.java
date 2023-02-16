@@ -1,4 +1,4 @@
-package com.running.user;
+package com.running.buddybydaylight.model;
 
 import jakarta.persistence.*;
 

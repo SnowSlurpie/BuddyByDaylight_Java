@@ -1,4 +1,4 @@
-package com.running.user;
+package com.running.buddybydaylight.exception;
 
 public class UserNotFoundException extends Throwable {
 

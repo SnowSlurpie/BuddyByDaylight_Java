@@ -1,5 +1,6 @@
-package com.running.user;
+package com.running.buddybydaylight.repository;
 
+import com.running.buddybydaylight.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Integer> {

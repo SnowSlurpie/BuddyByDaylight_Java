@@ -9,23 +9,28 @@
 
 <div class="container-fluid text-center">
 <h1>Welcome to Buddy By Daylight</h1>
+    <!--    Admin functionality-->
+    <a class="h2" th:href="@{/users}">Manage Users Here!</a>
+<div>
+    <p>Buddy By Daylight is a fan-made website dedicated to the
+        popular survival horror game Dead by Daylight. Here, you can find
+        information about the killers and survivors.</p>
+</div>
 
-<p>Buddy By Daylight is a fan-made website dedicated to the
-    popular survival horror game Dead by Daylight. Here, you can find
-    information about the killers and survivors.</p>
-
-<p>Whether you're a seasoned player or just starting out, we hope
+<div>
+    <p>Whether you're a seasoned player or just starting out, we hope
     you'll find the information and resources on our site helpful in
     your journey to become a formidable foe in The Fog</p>
+</div>
 
-<!--    Admin functionality-->
-<a class="h2" th:href="@{/users}">Manage Users Here!</a>
 
-<h1>Survivors</h1>
+<a class="h2" th:href="@{/survivors}">Survivors</a>
 
-<h1>Creator Builds</h1>
+<a class="h2" th:href="@{/killers}">Killers</a>
 
-<h1>Shrine of Secrets</h1>
+<a class="h2" th:href="@{/creatorBuilds}">Creator Builds</a>
+
+<a class="h2" th:href="@{/shrine}">Shrine of Secrets</a>
 
 </div>
 

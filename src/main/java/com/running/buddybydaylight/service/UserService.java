@@ -1,5 +1,8 @@
-package com.running.user;
+package com.running.buddybydaylight.service;
 
+import com.running.buddybydaylight.exception.UserNotFoundException;
+import com.running.buddybydaylight.model.User;
+import com.running.buddybydaylight.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +21,7 @@ public class UserService {
         repo.save(user);
     }
     
-    public User get(Integer id) throws UserNotFoundException{
+    public User get(Integer id) throws UserNotFoundException {
         Optional<User> result = repo.findById(id);
         if (result.isPresent()){
             return result.get();

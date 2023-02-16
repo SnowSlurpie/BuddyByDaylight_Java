@@ -1,4 +1,4 @@
-package com.running;
+package com.running.buddybydaylight;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
