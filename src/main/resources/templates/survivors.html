@@ -1,10 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Survivors Page</title>
+    <title>Manage Survivors</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css">
 </head>
 <body>
+<div class="container-fluid text-center">
+    <div><h2>Survivors Table</h2></div>
+    <div class="m-2">
+        <a class="h3 " th:href="@{/survivors/new}">Add New Survivor!</a>
+    </div>
 
+    <div th:if="${message}" class="alert alert-success text-center">
+        [[${message}]]
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead class="bg-dark text-white">
+            <tr>
+                <th>ID</th>
+                <th>Survivor Name</th>
+                <th>Survivor's Description</th>
+                <th>Survivor's Perks</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <th:block th:each="survivors : ${listSurvivors}">
+
+                <tr>
+                    <td>[[${survivors.survId}]]</td>
+                    <td>[[${survivors.survName}]]</td>
+                    <td>[[${survivors.survDesc}]]</td>
+                    <td>[[${survivors.survPerk}]]</td>
+                    <td>
+                        <a class="h4 me-4" th:href="@{'/survivors/edit/' + ${survivors.survId}}">Edit</a>
+                        <a class="h4" th:href="@{'/survivors/delete/' + ${survivors.survId}}">Delete</a>
+                    </td>
+                </tr>
+
+            </th:block>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
 </body>
 </html>
