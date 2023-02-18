@@ -17,26 +17,30 @@ public class KillerController {
     @Autowired
     private KillerService service;
 
+
+    //controller for getting to killers page
         @GetMapping("/killers")
         public String showKillerList(Model model)      {
             Iterable<Killers> listKillers = service.listAll();
             model.addAttribute("listKillers", listKillers);
             return "killers";
         }
-
+    //controller for creating a new killer
         @GetMapping("/killers/new")
         public String showNewForm(Model model) {
             model.addAttribute("killer", new Killers());
             model.addAttribute("pageTitle", "Add New Killer");
             return "killer_form";
         }
+
+    //controller for saving a new killer to the db
     @PostMapping("/killers/save")
     public String saveUser(Killers killer, RedirectAttributes ra) {
         service.save(killer);
         ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
         return "redirect:/killers";
     }
-
+    //controller for editing an existing killer based off of their id
     @GetMapping("/killers/edit/{id}")
     public String showEditForm(@PathVariable("id") Integer id,
                                Model model,
@@ -52,6 +56,7 @@ public class KillerController {
         }
     }
 
+    //controller for deleting an existing killer based off of their id
     @GetMapping("/killers/delete/{id}")
     public String deleteUser(@PathVariable("id") Integer id,
                              RedirectAttributes ra) {

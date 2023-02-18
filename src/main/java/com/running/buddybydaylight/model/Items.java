@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 @Table
 public class Items {
 
+
+    //    item model containing each column of the table here
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer itemId;

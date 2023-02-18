@@ -3,6 +3,7 @@ package com.running.buddybydaylight.model;
 import jakarta.persistence.*;
 
 
+//    survivor model containing each column of the table here
 @Entity
 @Table
 public class Survivors {

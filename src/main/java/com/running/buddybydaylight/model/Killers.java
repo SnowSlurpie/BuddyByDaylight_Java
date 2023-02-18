@@ -7,6 +7,8 @@ import jakarta.persistence.*;
 @Table(name="killers")
 public class Killers {
 
+
+//    killer model containing each column of the table here
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;

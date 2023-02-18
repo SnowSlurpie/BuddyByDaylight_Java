@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 @Table(name="user")
 public class User {
 
+
+    //    user model containing each column of the table here
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;

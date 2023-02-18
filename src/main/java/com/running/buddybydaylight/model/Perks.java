@@ -2,6 +2,8 @@ package com.running.buddybydaylight.model;
 
 import jakarta.persistence.*;
 
+
+//    perks model containing each column of the table here
 @Entity
 @Table(name="perks")
 public class Perks {

@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class UserController {
     @Autowired
     private UserService service;
-
+//controller for getting to users page
     @GetMapping("/users")
     public String showUserList(Model model) {
         Iterable<User> listUsers = service.listAll();
@@ -23,6 +23,7 @@ public class UserController {
         return "users";
     }
 
+    //controller for creating a new user
     @GetMapping("/users/new")
     public String showNewForm(Model model) {
         model.addAttribute("user", new User());
@@ -30,6 +31,7 @@ public class UserController {
         return "user_form";
     }
 
+    //controller for saving a new user to the db
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes ra) {
         service.save(user);
@@ -37,6 +39,7 @@ public class UserController {
         return "redirect:/users";
     }
 
+    //controller for editing a current user based on their id
     @GetMapping("/users/edit/{id}")
     public String showEditForm(@PathVariable("id") Integer id,
                                Model model,
@@ -51,6 +54,8 @@ public class UserController {
             return "redirect:/users";
         }
     }
+
+    //controller for deleting users based on their id
 
     @GetMapping("/users/delete/{id}")
     public String deleteUser(@PathVariable("id") Integer id,

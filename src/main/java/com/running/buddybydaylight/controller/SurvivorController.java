@@ -18,25 +18,30 @@ public class SurvivorController {
     @Autowired
     private SurvivorService service;
 
+    //controller for getting to survivors page
         @GetMapping("/survivors")
         public String showKillerList(Model model)      {
             Iterable<Survivors> listSurvivors = service.listAll();
             model.addAttribute("listSurvivors", listSurvivors);
             return "survivors";
         }
-
+    //controller for creating a new survivor
         @GetMapping("/survivors/new")
         public String showNewForm(Model model) {
             model.addAttribute("survivors", new Survivors());
             model.addAttribute("pageTitle", "Add New Survivor");
             return "survivor_form";
         }
+
+    //controller for saving a new survivor to the db
     @PostMapping("/survivors/save")
     public String saveUser(Survivors survivors, RedirectAttributes ra) {
         service.save(survivors);
         ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
         return "redirect:/survivors";
     }
+
+    //controller for editing an existing survivor based off of their id
 
     @GetMapping("/survivors/edit/{id}")
     public String showEditForm(@PathVariable("id") Integer id,
@@ -52,6 +57,8 @@ public class SurvivorController {
             return "redirect:/survivors";
         }
     }
+
+    //controller for deleting an existing survivor based off of their id
 
     @GetMapping("/survivors/delete/{id}")
     public String deleteUser(@PathVariable("id") Integer id,
