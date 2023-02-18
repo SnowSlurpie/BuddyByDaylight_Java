@@ -5,6 +5,18 @@
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css">
 </head>
 <body>
+<!--nav bar -->
+<header>
+    <h1>Buddy By Daylight</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/index}">Home</a></li>
+            <li><a th:href="@{/killers}">Killers</a></li>
+            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
+            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
+        </ul>
+    </nav>
+</header>
 <div class="container-fluid text-center">
     <div><h2>Survivors Table</h2></div>
     <div class="m-2">

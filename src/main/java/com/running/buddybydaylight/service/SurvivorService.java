@@ -22,6 +22,7 @@ public class SurvivorService {
         repo.save(survivors);
     }
 
+    //    Exception Handling
     public Survivors get(Integer id) throws UserNotFoundException {
         Optional<Survivors> result = repo.findById(id);
         if (result.isPresent()){

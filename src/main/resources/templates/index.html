@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <title>Buddy By Daylight</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" >
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
 </head>
 <body>
+<!--nav bar -->
+<header>
+    <h1>Buddy By Daylight</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/survivors}">Survivors</a></li>
+            <li><a th:href="@{/killers}">Killers</a></li>
+            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
+            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
+        </ul>
+    </nav>
+</header>
 
 <div class="container-fluid text-center">
 <h1>Welcome to Buddy By Daylight</h1>
@@ -36,3 +49,4 @@
 
 </body>
 </html>
+
