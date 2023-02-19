@@ -3,7 +3,9 @@ package com.running.buddybydaylight.service;
 
 import com.running.buddybydaylight.exception.UserNotFoundException;
 import com.running.buddybydaylight.model.Killers;
+import com.running.buddybydaylight.model.Survivors;
 import com.running.buddybydaylight.repository.KillerRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,15 @@ public class KillerService {
         repo.save(killers);
     }
 
+    @Transactional
+    public void createKiller(Killers killers) throws Exception{
+        Killers killExists = repo.findBykName((killers.getkName()));
+        if(killExists !=null){
+            throw new Exception("Killer with that name already exists.");
+        }
+        repo.save(killers);
+    }
+
 
     //    Exception Handling
     public Killers get(Integer id) throws UserNotFoundException {
@@ -36,7 +47,7 @@ public class KillerService {
     public void delete(Integer id) throws UserNotFoundException {
         Long count = repo.countById(id);
         if (count == null || count == 0 ){
-            throw new UserNotFoundException("Could not find any users with ID " + id);
+            throw new UserNotFoundException("Could not find any killers with ID " + id);
         }
         repo.deleteById(id);
     }

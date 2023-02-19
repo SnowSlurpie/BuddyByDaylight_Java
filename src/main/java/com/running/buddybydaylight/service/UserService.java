@@ -3,6 +3,7 @@ package com.running.buddybydaylight.service;
 import com.running.buddybydaylight.exception.UserNotFoundException;
 import com.running.buddybydaylight.model.User;
 import com.running.buddybydaylight.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,14 @@ public class UserService {
         repo.save(user);
     }
 
+    @Transactional
+    public void createUser(User user) throws Exception{
+        User userExists = repo.findByEmail((user.getEmail()));
+        if(userExists !=null){
+            throw new Exception("Account with that email already exists.");
+        }
+        repo.save(user);
+    }
 
 //    Exception Handling
     public User get(Integer id) throws UserNotFoundException {

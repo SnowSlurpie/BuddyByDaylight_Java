@@ -3,6 +3,7 @@ package com.running.buddybydaylight.service;
 import com.running.buddybydaylight.exception.UserNotFoundException;
 import com.running.buddybydaylight.model.Survivors;
 import com.running.buddybydaylight.repository.SurvivorRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,15 @@ public class SurvivorService {
     }
 
     public void save(Survivors survivors){
+        repo.save(survivors);
+    }
+
+    @Transactional
+    public void createSurvivor(Survivors survivors) throws Exception{
+        Survivors survExists = repo.findBysurvName((survivors.getSurvName()));
+        if(survExists !=null){
+            throw new Exception("Account with that email already exists.");
+        }
         repo.save(survivors);
     }
 

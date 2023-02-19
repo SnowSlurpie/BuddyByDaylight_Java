@@ -4,12 +4,15 @@ import com.running.buddybydaylight.model.User;
 import com.running.buddybydaylight.exception.UserNotFoundException;
 import com.running.buddybydaylight.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.security.SecureRandom;
 
 @Controller
 public class UserController {
@@ -34,6 +37,14 @@ public class UserController {
     //controller for saving a new user to the db
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes ra) {
+
+        Integer passHash = 10;
+
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(passHash, new SecureRandom());
+        String encodedPass = bCryptPasswordEncoder.encode(user.getPassword());
+        user.setPassword(encodedPass);
+
+
         service.save(user);
         ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
         return "redirect:/users";
