@@ -148,3 +148,601 @@ This generated password is for development use only. Your security configuration
  13356 --- [RMI TCP Connection(3)-192.168.1.172] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-02-19T00:47:30.699-05:00 INFO  [-] 2023-02-19 00:47:30,699 [RMI TCP Connection(3)-192.168.1.172] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
  13356 --- [RMI TCP Connection(3)-192.168.1.172] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-19T00:57:09.556-05:00 INFO  [-] 2023-02-19 00:57:09,556 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-19T00:57:09.568-05:00 INFO  [-] 2023-02-19 00:57:09,568 [Thread-5] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T00:57:09.570-05:00 INFO  [-] 2023-02-19 00:57:09,570 [Thread-5] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+ 13356 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-19T00:57:09.590-05:00 INFO  [-] 2023-02-19 00:57:09,590 [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T00:57:09.592-05:00 INFO  [-] 2023-02-19 00:57:09,592 [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 13356 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-19T00:57:09.599-05:00 INFO  [-] 2023-02-19 00:57:09,599 [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 13356 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-19T00:57:09.681-05:00 INFO  [-] 2023-02-19 00:57:09,681 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T00:57:09.681-05:00 INFO  [-] 2023-02-19 00:57:09,681 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T00:57:09.957-05:00 INFO  [-] 2023-02-19 00:57:09,957 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T00:57:09.966-05:00 INFO  [-] 2023-02-19 00:57:09,966 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2023-02-19T00:57:10.073-05:00 INFO  [-] 2023-02-19 00:57:10,073 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T00:57:10.073-05:00 INFO  [-] 2023-02-19 00:57:10,073 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T00:57:10.073-05:00 INFO  [-] 2023-02-19 00:57:10,073 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T00:57:10.089-05:00 INFO  [-] 2023-02-19 00:57:10,089 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T00:57:10.089-05:00 INFO  [-] 2023-02-19 00:57:10,089 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 404 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 404 ms
+2023-02-19T00:57:10.175-05:00 INFO  [-] 2023-02-19 00:57:10,175 [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-02-19T00:57:10.191-05:00 INFO  [-] 2023-02-19 00:57:10,191 [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f653fd
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f653fd
+2023-02-19T00:57:10.192-05:00 INFO  [-] 2023-02-19 00:57:10,192 [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-02-19T00:57:10.438-05:00 INFO  [-] 2023-02-19 00:57:10,438 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T00:57:10.442-05:00 WARN  [-] 2023-02-19 00:57:10,442 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T00:57:10.450-05:00 INFO  [-] 2023-02-19 00:57:10,450 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T00:57:10.530-05:00 INFO  [-] 2023-02-19 00:57:10,530 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T00:57:10.531-05:00 INFO  [-] 2023-02-19 00:57:10,531 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T00:57:10.619-05:00 WARN  [-] 2023-02-19 00:57:10,619 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T00:57:10.677-05:00 INFO  [-] 2023-02-19 00:57:10,677 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T00:57:10.922-05:00 WARN  [-] 2023-02-19 00:57:10,922 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f78f593e-daa7-4666-8ac8-79f7fd2700b5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f78f593e-daa7-4666-8ac8-79f7fd2700b5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T00:57:10.931-05:00 INFO  [-] 2023-02-19 00:57:10,931 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T00:57:10.938-05:00 INFO  [-] 2023-02-19 00:57:10,938 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16563915, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@483b36ee, org.springframework.security.web.context.SecurityContextHolderFilter@1c6362ee, org.springframework.security.web.header.HeaderWriterFilter@5d589288, org.springframework.web.filter.CorsFilter@2912496a, org.springframework.security.web.csrf.CsrfFilter@13aa08a5, org.springframework.security.web.authentication.logout.LogoutFilter@671582ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b79563d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b7e701a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65f49ee3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f2c70c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f4fbee7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@222b7a05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@424d8dd9, org.springframework.security.web.access.ExceptionTranslationFilter@206bbe5d, org.springframework.security.web.access.intercept.AuthorizationFilter@17cc5df9]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16563915, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@483b36ee, org.springframework.security.web.context.SecurityContextHolderFilter@1c6362ee, org.springframework.security.web.header.HeaderWriterFilter@5d589288, org.springframework.web.filter.CorsFilter@2912496a, org.springframework.security.web.csrf.CsrfFilter@13aa08a5, org.springframework.security.web.authentication.logout.LogoutFilter@671582ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b79563d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b7e701a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65f49ee3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f2c70c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f4fbee7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@222b7a05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@424d8dd9, org.springframework.security.web.access.ExceptionTranslationFilter@206bbe5d, org.springframework.security.web.access.intercept.AuthorizationFilter@17cc5df9]
+2023-02-19T00:57:10.963-05:00 INFO  [-] 2023-02-19 00:57:10,963 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T00:57:10.983-05:00 INFO  [-] 2023-02-19 00:57:10,983 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T00:57:10.991-05:00 INFO  [-] 2023-02-19 00:57:10,991 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.336 seconds (process running for 586.273)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.336 seconds (process running for 586.273)
+2023-02-19T00:57:10.993-05:00 INFO  [-] 2023-02-19 00:57:10,993 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T00:57:12.410-05:00 INFO  [-] 2023-02-19 00:57:12,410 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-02-19T00:57:12.420-05:00 INFO  [-] 2023-02-19 00:57:12,420 [Thread-7] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T00:57:12.426-05:00 INFO  [-] 2023-02-19 00:57:12,426 [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T00:57:12.427-05:00 INFO  [-] 2023-02-19 00:57:12,427 [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ 13356 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-02-19T00:57:12.429-05:00 INFO  [-] 2023-02-19 00:57:12,429 [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+ 13356 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-02-19T00:57:12.503-05:00 INFO  [-] 2023-02-19 00:57:12,503 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T00:57:12.503-05:00 INFO  [-] 2023-02-19 00:57:12,503 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T00:57:12.749-05:00 INFO  [-] 2023-02-19 00:57:12,749 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T00:57:12.759-05:00 INFO  [-] 2023-02-19 00:57:12,759 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2023-02-19T00:57:12.846-05:00 INFO  [-] 2023-02-19 00:57:12,846 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T00:57:12.846-05:00 INFO  [-] 2023-02-19 00:57:12,846 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T00:57:12.846-05:00 INFO  [-] 2023-02-19 00:57:12,846 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T00:57:12.859-05:00 INFO  [-] 2023-02-19 00:57:12,859 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T00:57:12.859-05:00 INFO  [-] 2023-02-19 00:57:12,859 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 354 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 354 ms
+2023-02-19T00:57:12.908-05:00 INFO  [-] 2023-02-19 00:57:12,908 [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-02-19T00:57:12.918-05:00 INFO  [-] 2023-02-19 00:57:12,918 [restartedMain] c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a319c55
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a319c55
+2023-02-19T00:57:12.918-05:00 INFO  [-] 2023-02-19 00:57:12,918 [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-02-19T00:57:13.103-05:00 INFO  [-] 2023-02-19 00:57:13,103 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T00:57:13.105-05:00 WARN  [-] 2023-02-19 00:57:13,105 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T00:57:13.108-05:00 INFO  [-] 2023-02-19 00:57:13,108 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T00:57:13.163-05:00 INFO  [-] 2023-02-19 00:57:13,163 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T00:57:13.163-05:00 INFO  [-] 2023-02-19 00:57:13,163 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T00:57:13.236-05:00 WARN  [-] 2023-02-19 00:57:13,236 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T00:57:13.269-05:00 INFO  [-] 2023-02-19 00:57:13,269 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T00:57:13.459-05:00 WARN  [-] 2023-02-19 00:57:13,459 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6963e861-24e9-45d0-a266-3279209bdf32
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6963e861-24e9-45d0-a266-3279209bdf32
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T00:57:13.469-05:00 INFO  [-] 2023-02-19 00:57:13,469 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T00:57:13.475-05:00 INFO  [-] 2023-02-19 00:57:13,475 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75adefd1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e8180a2, org.springframework.security.web.context.SecurityContextHolderFilter@1fd9392c, org.springframework.security.web.header.HeaderWriterFilter@258b6a22, org.springframework.web.filter.CorsFilter@64f33f84, org.springframework.security.web.csrf.CsrfFilter@67d0577, org.springframework.security.web.authentication.logout.LogoutFilter@6c84c4e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f2eb4d2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4554c768, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f035dad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e7b592, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e1d11d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf0604e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@454af2fb, org.springframework.security.web.access.ExceptionTranslationFilter@37bfbc8b, org.springframework.security.web.access.intercept.AuthorizationFilter@3742d959]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75adefd1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e8180a2, org.springframework.security.web.context.SecurityContextHolderFilter@1fd9392c, org.springframework.security.web.header.HeaderWriterFilter@258b6a22, org.springframework.web.filter.CorsFilter@64f33f84, org.springframework.security.web.csrf.CsrfFilter@67d0577, org.springframework.security.web.authentication.logout.LogoutFilter@6c84c4e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f2eb4d2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4554c768, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f035dad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e7b592, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e1d11d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf0604e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@454af2fb, org.springframework.security.web.access.ExceptionTranslationFilter@37bfbc8b, org.springframework.security.web.access.intercept.AuthorizationFilter@3742d959]
+2023-02-19T00:57:13.489-05:00 INFO  [-] 2023-02-19 00:57:13,489 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T00:57:13.502-05:00 INFO  [-] 2023-02-19 00:57:13,502 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T00:57:13.510-05:00 INFO  [-] 2023-02-19 00:57:13,510 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.033 seconds (process running for 588.792)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.033 seconds (process running for 588.792)
+2023-02-19T00:57:13.511-05:00 INFO  [-] 2023-02-19 00:57:13,511 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:02:43.405-05:00 INFO  [-] 2023-02-19 01:02:43,405 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 13356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19T01:02:43.405-05:00 INFO  [-] 2023-02-19 01:02:43,405 [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 13356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-19T01:02:43.408-05:00 INFO  [-] 2023-02-19 01:02:43,408 [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 13356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-19T01:05:33.439-05:00 INFO  [-] 2023-02-19 01:05:33,439 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-19T01:05:33.446-05:00 INFO  [-] 2023-02-19 01:05:33,446 [Thread-11] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T01:05:33.446-05:00 INFO  [-] 2023-02-19 01:05:33,446 [Thread-11] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+ 13356 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-19T01:05:33.452-05:00 INFO  [-] 2023-02-19 01:05:33,452 [Thread-11] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:05:33.453-05:00 INFO  [-] 2023-02-19 01:05:33,453 [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ 13356 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-02-19T01:05:33.459-05:00 INFO  [-] 2023-02-19 01:05:33,459 [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+ 13356 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-02-19T01:05:33.522-05:00 INFO  [-] 2023-02-19 01:05:33,522 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T01:05:33.522-05:00 INFO  [-] 2023-02-19 01:05:33,522 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T01:05:33.814-05:00 INFO  [-] 2023-02-19 01:05:33,814 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T01:05:33.823-05:00 INFO  [-] 2023-02-19 01:05:33,823 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2023-02-19T01:05:33.937-05:00 INFO  [-] 2023-02-19 01:05:33,937 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T01:05:33.937-05:00 INFO  [-] 2023-02-19 01:05:33,937 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T01:05:33.937-05:00 INFO  [-] 2023-02-19 01:05:33,937 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T01:05:33.957-05:00 INFO  [-] 2023-02-19 01:05:33,957 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T01:05:33.958-05:00 INFO  [-] 2023-02-19 01:05:33,958 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 435 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 435 ms
+2023-02-19T01:05:34.024-05:00 INFO  [-] 2023-02-19 01:05:34,024 [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-02-19T01:05:34.035-05:00 INFO  [-] 2023-02-19 01:05:34,035 [restartedMain] c.z.h.p.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b554da4
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b554da4
+2023-02-19T01:05:34.035-05:00 INFO  [-] 2023-02-19 01:05:34,035 [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-02-19T01:05:34.248-05:00 INFO  [-] 2023-02-19 01:05:34,248 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T01:05:34.251-05:00 WARN  [-] 2023-02-19 01:05:34,251 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T01:05:34.255-05:00 INFO  [-] 2023-02-19 01:05:34,255 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T01:05:34.328-05:00 INFO  [-] 2023-02-19 01:05:34,328 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T01:05:34.329-05:00 INFO  [-] 2023-02-19 01:05:34,329 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:05:34.462-05:00 WARN  [-] 2023-02-19 01:05:34,462 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T01:05:34.530-05:00 INFO  [-] 2023-02-19 01:05:34,530 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T01:05:34.770-05:00 WARN  [-] 2023-02-19 01:05:34,770 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 819d6e00-ea47-4aa1-94e9-09b2233ce448
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 819d6e00-ea47-4aa1-94e9-09b2233ce448
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T01:05:34.781-05:00 INFO  [-] 2023-02-19 01:05:34,781 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T01:05:34.789-05:00 INFO  [-] 2023-02-19 01:05:34,789 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c47405b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bc0475f, org.springframework.security.web.context.SecurityContextHolderFilter@49cc6008, org.springframework.security.web.header.HeaderWriterFilter@48a2790b, org.springframework.web.filter.CorsFilter@7347a104, org.springframework.security.web.csrf.CsrfFilter@4a88f4c0, org.springframework.security.web.authentication.logout.LogoutFilter@77a5b793, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3afa52b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@640d3279, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d35b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77308b2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb305, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f3c7eb4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26bee878, org.springframework.security.web.access.ExceptionTranslationFilter@68027541, org.springframework.security.web.access.intercept.AuthorizationFilter@6c8dc4cb]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c47405b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bc0475f, org.springframework.security.web.context.SecurityContextHolderFilter@49cc6008, org.springframework.security.web.header.HeaderWriterFilter@48a2790b, org.springframework.web.filter.CorsFilter@7347a104, org.springframework.security.web.csrf.CsrfFilter@4a88f4c0, org.springframework.security.web.authentication.logout.LogoutFilter@77a5b793, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3afa52b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@640d3279, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d35b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77308b2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb305, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f3c7eb4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26bee878, org.springframework.security.web.access.ExceptionTranslationFilter@68027541, org.springframework.security.web.access.intercept.AuthorizationFilter@6c8dc4cb]
+2023-02-19T01:05:34.809-05:00 INFO  [-] 2023-02-19 01:05:34,809 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T01:05:34.822-05:00 INFO  [-] 2023-02-19 01:05:34,822 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T01:05:34.831-05:00 INFO  [-] 2023-02-19 01:05:34,831 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.331 seconds (process running for 1090.113)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.331 seconds (process running for 1090.113)
+2023-02-19T01:05:34.832-05:00 INFO  [-] 2023-02-19 01:05:34,832 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:05:36.257-05:00 INFO  [-] 2023-02-19 01:05:36,257 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-02-19T01:05:36.263-05:00 INFO  [-] 2023-02-19 01:05:36,263 [Thread-15] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T01:05:36.269-05:00 INFO  [-] 2023-02-19 01:05:36,269 [Thread-15] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:05:36.269-05:00 INFO  [-] 2023-02-19 01:05:36,269 [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ 13356 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-02-19T01:05:36.273-05:00 INFO  [-] 2023-02-19 01:05:36,273 [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed.
+ 13356 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-02-19T01:05:36.330-05:00 INFO  [-] 2023-02-19 01:05:36,330 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T01:05:36.330-05:00 INFO  [-] 2023-02-19 01:05:36,330 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T01:05:36.544-05:00 INFO  [-] 2023-02-19 01:05:36,544 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T01:05:36.552-05:00 INFO  [-] 2023-02-19 01:05:36,552 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2023-02-19T01:05:36.622-05:00 INFO  [-] 2023-02-19 01:05:36,622 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T01:05:36.622-05:00 INFO  [-] 2023-02-19 01:05:36,622 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T01:05:36.622-05:00 INFO  [-] 2023-02-19 01:05:36,622 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T01:05:36.639-05:00 INFO  [-] 2023-02-19 01:05:36,639 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T01:05:36.639-05:00 INFO  [-] 2023-02-19 01:05:36,639 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 308 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2023-02-19T01:05:36.689-05:00 INFO  [-] 2023-02-19 01:05:36,689 [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-02-19T01:05:36.697-05:00 INFO  [-] 2023-02-19 01:05:36,697 [restartedMain] c.z.h.p.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@434e6d2e
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@434e6d2e
+2023-02-19T01:05:36.697-05:00 INFO  [-] 2023-02-19 01:05:36,697 [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-02-19T01:05:36.880-05:00 INFO  [-] 2023-02-19 01:05:36,880 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T01:05:36.883-05:00 WARN  [-] 2023-02-19 01:05:36,883 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T01:05:36.886-05:00 INFO  [-] 2023-02-19 01:05:36,886 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T01:05:36.944-05:00 INFO  [-] 2023-02-19 01:05:36,944 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T01:05:36.944-05:00 INFO  [-] 2023-02-19 01:05:36,944 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:05:37.019-05:00 WARN  [-] 2023-02-19 01:05:37,019 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T01:05:37.047-05:00 INFO  [-] 2023-02-19 01:05:37,047 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T01:05:37.243-05:00 WARN  [-] 2023-02-19 01:05:37,243 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a76093fb-353a-40eb-a33e-5a52d15506c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a76093fb-353a-40eb-a33e-5a52d15506c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T01:05:37.252-05:00 INFO  [-] 2023-02-19 01:05:37,252 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T01:05:37.258-05:00 INFO  [-] 2023-02-19 01:05:37,258 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7746c547, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@136e0c78, org.springframework.security.web.context.SecurityContextHolderFilter@a610f11, org.springframework.security.web.header.HeaderWriterFilter@11b5efed, org.springframework.web.filter.CorsFilter@5b041606, org.springframework.security.web.csrf.CsrfFilter@3b824, org.springframework.security.web.authentication.logout.LogoutFilter@3f11388b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73b762b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58f663e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b243776, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f0da1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@173e54e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66822259, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a89ada8, org.springframework.security.web.access.ExceptionTranslationFilter@45869976, org.springframework.security.web.access.intercept.AuthorizationFilter@2374de5c]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7746c547, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@136e0c78, org.springframework.security.web.context.SecurityContextHolderFilter@a610f11, org.springframework.security.web.header.HeaderWriterFilter@11b5efed, org.springframework.web.filter.CorsFilter@5b041606, org.springframework.security.web.csrf.CsrfFilter@3b824, org.springframework.security.web.authentication.logout.LogoutFilter@3f11388b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73b762b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58f663e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b243776, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f0da1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@173e54e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66822259, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a89ada8, org.springframework.security.web.access.ExceptionTranslationFilter@45869976, org.springframework.security.web.access.intercept.AuthorizationFilter@2374de5c]
+2023-02-19T01:05:37.281-05:00 INFO  [-] 2023-02-19 01:05:37,281 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T01:05:37.294-05:00 INFO  [-] 2023-02-19 01:05:37,294 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T01:05:37.304-05:00 INFO  [-] 2023-02-19 01:05:37,304 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 0.988 seconds (process running for 1092.586)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 0.988 seconds (process running for 1092.586)
+2023-02-19T01:05:37.308-05:00 INFO  [-] 2023-02-19 01:05:37,308 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:06:06.311-05:00 INFO  [-] 2023-02-19 01:06:06,311 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-19T01:06:06.324-05:00 INFO  [-] 2023-02-19 01:06:06,324 [Thread-19] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T01:06:06.328-05:00 INFO  [-] 2023-02-19 01:06:06,328 [Thread-19] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:06.329-05:00 INFO  [-] 2023-02-19 01:06:06,329 [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ 13356 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-02-19T01:06:06.333-05:00 INFO  [-] 2023-02-19 01:06:06,333 [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed.
+ 13356 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-02-19T01:06:06.402-05:00 INFO  [-] 2023-02-19 01:06:06,402 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T01:06:06.403-05:00 INFO  [-] 2023-02-19 01:06:06,403 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T01:06:06.696-05:00 INFO  [-] 2023-02-19 01:06:06,696 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T01:06:06.704-05:00 INFO  [-] 2023-02-19 01:06:06,704 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2023-02-19T01:06:06.798-05:00 INFO  [-] 2023-02-19 01:06:06,798 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T01:06:06.799-05:00 INFO  [-] 2023-02-19 01:06:06,799 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T01:06:06.799-05:00 INFO  [-] 2023-02-19 01:06:06,799 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T01:06:06.812-05:00 INFO  [-] 2023-02-19 01:06:06,812 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T01:06:06.812-05:00 INFO  [-] 2023-02-19 01:06:06,812 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 407 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2023-02-19T01:06:06.860-05:00 INFO  [-] 2023-02-19 01:06:06,860 [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-02-19T01:06:06.868-05:00 INFO  [-] 2023-02-19 01:06:06,868 [restartedMain] c.z.h.p.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d5f29f8
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d5f29f8
+2023-02-19T01:06:06.868-05:00 INFO  [-] 2023-02-19 01:06:06,868 [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-02-19T01:06:07.063-05:00 INFO  [-] 2023-02-19 01:06:07,063 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T01:06:07.066-05:00 WARN  [-] 2023-02-19 01:06:07,066 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T01:06:07.068-05:00 INFO  [-] 2023-02-19 01:06:07,068 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T01:06:07.112-05:00 INFO  [-] 2023-02-19 01:06:07,112 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T01:06:07.112-05:00 INFO  [-] 2023-02-19 01:06:07,112 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:07.189-05:00 WARN  [-] 2023-02-19 01:06:07,189 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T01:06:07.249-05:00 INFO  [-] 2023-02-19 01:06:07,249 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T01:06:07.451-05:00 WARN  [-] 2023-02-19 01:06:07,451 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 28986d42-51d9-44a5-b7b8-89c460736d7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 28986d42-51d9-44a5-b7b8-89c460736d7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T01:06:07.463-05:00 INFO  [-] 2023-02-19 01:06:07,463 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T01:06:07.469-05:00 INFO  [-] 2023-02-19 01:06:07,469 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48606b9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a355b94, org.springframework.security.web.context.SecurityContextHolderFilter@7c63e36b, org.springframework.security.web.header.HeaderWriterFilter@6a787e5, org.springframework.web.filter.CorsFilter@186cbb07, org.springframework.security.web.csrf.CsrfFilter@71c89b2d, org.springframework.security.web.authentication.logout.LogoutFilter@502b5e83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4058407d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@427761cf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7cdc9b05, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d6f2768, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49470e39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7855598f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37ab2b80, org.springframework.security.web.access.ExceptionTranslationFilter@520c65e3, org.springframework.security.web.access.intercept.AuthorizationFilter@7b609cb2]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48606b9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a355b94, org.springframework.security.web.context.SecurityContextHolderFilter@7c63e36b, org.springframework.security.web.header.HeaderWriterFilter@6a787e5, org.springframework.web.filter.CorsFilter@186cbb07, org.springframework.security.web.csrf.CsrfFilter@71c89b2d, org.springframework.security.web.authentication.logout.LogoutFilter@502b5e83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4058407d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@427761cf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7cdc9b05, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d6f2768, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49470e39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7855598f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37ab2b80, org.springframework.security.web.access.ExceptionTranslationFilter@520c65e3, org.springframework.security.web.access.intercept.AuthorizationFilter@7b609cb2]
+2023-02-19T01:06:07.490-05:00 INFO  [-] 2023-02-19 01:06:07,490 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T01:06:07.502-05:00 INFO  [-] 2023-02-19 01:06:07,502 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T01:06:07.511-05:00 INFO  [-] 2023-02-19 01:06:07,511 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.129 seconds (process running for 1122.793)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.129 seconds (process running for 1122.793)
+2023-02-19T01:06:07.514-05:00 INFO  [-] 2023-02-19 01:06:07,514 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:06:08.934-05:00 INFO  [-] 2023-02-19 01:06:08,934 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-02-19T01:06:08.944-05:00 INFO  [-] 2023-02-19 01:06:08,944 [Thread-23] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T01:06:08.948-05:00 INFO  [-] 2023-02-19 01:06:08,948 [Thread-23] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:08.948-05:00 INFO  [-] 2023-02-19 01:06:08,948 [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown initiated...
+ 13356 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-02-19T01:06:08.952-05:00 INFO  [-] 2023-02-19 01:06:08,952 [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown completed.
+ 13356 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-02-19T01:06:09.031-05:00 INFO  [-] 2023-02-19 01:06:09,031 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T01:06:09.032-05:00 INFO  [-] 2023-02-19 01:06:09,032 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T01:06:09.294-05:00 INFO  [-] 2023-02-19 01:06:09,294 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T01:06:09.310-05:00 INFO  [-] 2023-02-19 01:06:09,310 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2023-02-19T01:06:09.406-05:00 INFO  [-] 2023-02-19 01:06:09,406 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T01:06:09.406-05:00 INFO  [-] 2023-02-19 01:06:09,406 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T01:06:09.406-05:00 INFO  [-] 2023-02-19 01:06:09,406 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T01:06:09.420-05:00 INFO  [-] 2023-02-19 01:06:09,420 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T01:06:09.420-05:00 INFO  [-] 2023-02-19 01:06:09,420 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 387 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 387 ms
+2023-02-19T01:06:09.467-05:00 INFO  [-] 2023-02-19 01:06:09,467 [restartedMain] c.z.h.HikariDataSource - HikariPool-7 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-02-19T01:06:09.474-05:00 INFO  [-] 2023-02-19 01:06:09,474 [restartedMain] c.z.h.p.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15966a7e
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15966a7e
+2023-02-19T01:06:09.474-05:00 INFO  [-] 2023-02-19 01:06:09,474 [restartedMain] c.z.h.HikariDataSource - HikariPool-7 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-02-19T01:06:09.729-05:00 INFO  [-] 2023-02-19 01:06:09,729 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T01:06:09.731-05:00 WARN  [-] 2023-02-19 01:06:09,731 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T01:06:09.733-05:00 INFO  [-] 2023-02-19 01:06:09,733 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T01:06:09.785-05:00 INFO  [-] 2023-02-19 01:06:09,785 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T01:06:09.785-05:00 INFO  [-] 2023-02-19 01:06:09,785 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:09.849-05:00 WARN  [-] 2023-02-19 01:06:09,849 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T01:06:09.881-05:00 INFO  [-] 2023-02-19 01:06:09,881 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T01:06:10.054-05:00 WARN  [-] 2023-02-19 01:06:10,054 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ef6420af-2f0d-45ea-82bd-9d022acbebf3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef6420af-2f0d-45ea-82bd-9d022acbebf3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T01:06:10.063-05:00 INFO  [-] 2023-02-19 01:06:10,063 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T01:06:10.070-05:00 INFO  [-] 2023-02-19 01:06:10,070 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79ec0cf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@643b1b46, org.springframework.security.web.context.SecurityContextHolderFilter@61d917b7, org.springframework.security.web.header.HeaderWriterFilter@69095417, org.springframework.web.filter.CorsFilter@657ae5a2, org.springframework.security.web.csrf.CsrfFilter@2eda7b24, org.springframework.security.web.authentication.logout.LogoutFilter@629f458a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30963ad1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6dccf883, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c22b0f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3dd690f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ca743f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e46a4b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75b08a38, org.springframework.security.web.access.ExceptionTranslationFilter@c8bd700, org.springframework.security.web.access.intercept.AuthorizationFilter@1385f50e]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79ec0cf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@643b1b46, org.springframework.security.web.context.SecurityContextHolderFilter@61d917b7, org.springframework.security.web.header.HeaderWriterFilter@69095417, org.springframework.web.filter.CorsFilter@657ae5a2, org.springframework.security.web.csrf.CsrfFilter@2eda7b24, org.springframework.security.web.authentication.logout.LogoutFilter@629f458a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30963ad1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6dccf883, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c22b0f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3dd690f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ca743f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e46a4b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75b08a38, org.springframework.security.web.access.ExceptionTranslationFilter@c8bd700, org.springframework.security.web.access.intercept.AuthorizationFilter@1385f50e]
+2023-02-19T01:06:10.084-05:00 INFO  [-] 2023-02-19 01:06:10,084 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T01:06:10.101-05:00 INFO  [-] 2023-02-19 01:06:10,101 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T01:06:10.109-05:00 INFO  [-] 2023-02-19 01:06:10,109 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.1 seconds (process running for 1125.39)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.1 seconds (process running for 1125.39)
+2023-02-19T01:06:10.110-05:00 INFO  [-] 2023-02-19 01:06:10,110 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:06:56.575-05:00 INFO  [-] 2023-02-19 01:06:56,575 [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+ 13356 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-19T01:06:56.581-05:00 INFO  [-] 2023-02-19 01:06:56,581 [Thread-27] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 13356 --- [Thread-27] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-19T01:06:56.586-05:00 INFO  [-] 2023-02-19 01:06:56,586 [Thread-27] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:56.586-05:00 INFO  [-] 2023-02-19 01:06:56,586 [Thread-27] c.z.h.HikariDataSource - HikariPool-7 - Shutdown initiated...
+ 13356 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-02-19T01:06:56.590-05:00 INFO  [-] 2023-02-19 01:06:56,590 [Thread-27] c.z.h.HikariDataSource - HikariPool-7 - Shutdown completed.
+ 13356 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-02-19T01:06:56.670-05:00 INFO  [-] 2023-02-19 01:06:56,670 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 13356 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T01:06:56.670-05:00 INFO  [-] 2023-02-19 01:06:56,670 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T01:06:56.913-05:00 INFO  [-] 2023-02-19 01:06:56,913 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T01:06:56.924-05:00 INFO  [-] 2023-02-19 01:06:56,924 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+ 13356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2023-02-19T01:06:57.030-05:00 INFO  [-] 2023-02-19 01:06:57,030 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T01:06:57.031-05:00 INFO  [-] 2023-02-19 01:06:57,031 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T01:06:57.031-05:00 INFO  [-] 2023-02-19 01:06:57,031 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 13356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T01:06:57.048-05:00 INFO  [-] 2023-02-19 01:06:57,048 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 13356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T01:06:57.048-05:00 INFO  [-] 2023-02-19 01:06:57,048 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 376 ms
+ 13356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
+2023-02-19T01:06:57.108-05:00 INFO  [-] 2023-02-19 01:06:57,108 [restartedMain] c.z.h.HikariDataSource - HikariPool-8 - Starting...
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-02-19T01:06:57.115-05:00 INFO  [-] 2023-02-19 01:06:57,115 [restartedMain] c.z.h.p.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11961512
+ 13356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11961512
+2023-02-19T01:06:57.115-05:00 INFO  [-] 2023-02-19 01:06:57,115 [restartedMain] c.z.h.HikariDataSource - HikariPool-8 - Start completed.
+ 13356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-02-19T01:06:57.313-05:00 INFO  [-] 2023-02-19 01:06:57,313 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 13356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T01:06:57.315-05:00 WARN  [-] 2023-02-19 01:06:57,315 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 13356 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T01:06:57.319-05:00 INFO  [-] 2023-02-19 01:06:57,319 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 13356 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T01:06:57.372-05:00 INFO  [-] 2023-02-19 01:06:57,372 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 13356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T01:06:57.372-05:00 INFO  [-] 2023-02-19 01:06:57,372 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:06:57.473-05:00 WARN  [-] 2023-02-19 01:06:57,473 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 13356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T01:06:57.521-05:00 INFO  [-] 2023-02-19 01:06:57,521 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 13356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T01:06:57.720-05:00 WARN  [-] 2023-02-19 01:06:57,720 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 48503962-f182-4a01-b607-ffb741e7d06b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 13356 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 48503962-f182-4a01-b607-ffb741e7d06b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T01:06:57.733-05:00 INFO  [-] 2023-02-19 01:06:57,733 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 13356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T01:06:57.743-05:00 INFO  [-] 2023-02-19 01:06:57,743 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@167b360a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c4cbf96, org.springframework.security.web.context.SecurityContextHolderFilter@a3b9f00, org.springframework.security.web.header.HeaderWriterFilter@373bedb, org.springframework.web.filter.CorsFilter@4360b087, org.springframework.security.web.csrf.CsrfFilter@5447cb74, org.springframework.security.web.authentication.logout.LogoutFilter@429da1e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@794ecdbd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b0049c8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49fcfbb4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a3e050a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@604df958, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59baac6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6784fe7, org.springframework.security.web.access.ExceptionTranslationFilter@441424eb, org.springframework.security.web.access.intercept.AuthorizationFilter@3dfaa7b]
+ 13356 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@167b360a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c4cbf96, org.springframework.security.web.context.SecurityContextHolderFilter@a3b9f00, org.springframework.security.web.header.HeaderWriterFilter@373bedb, org.springframework.web.filter.CorsFilter@4360b087, org.springframework.security.web.csrf.CsrfFilter@5447cb74, org.springframework.security.web.authentication.logout.LogoutFilter@429da1e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@794ecdbd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b0049c8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49fcfbb4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a3e050a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@604df958, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59baac6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6784fe7, org.springframework.security.web.access.ExceptionTranslationFilter@441424eb, org.springframework.security.web.access.intercept.AuthorizationFilter@3dfaa7b]
+2023-02-19T01:06:57.759-05:00 INFO  [-] 2023-02-19 01:06:57,759 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 13356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T01:06:57.776-05:00 INFO  [-] 2023-02-19 01:06:57,776 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 13356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T01:06:57.783-05:00 INFO  [-] 2023-02-19 01:06:57,783 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 1.135 seconds (process running for 1173.065)
+ 13356 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.135 seconds (process running for 1173.065)
+2023-02-19T01:06:57.786-05:00 INFO  [-] 2023-02-19 01:06:57,786 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 13356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-19T01:11:53.931-05:00 INFO  [-] 2023-02-19 01:11:53,931 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 13356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T01:11:53.932-05:00 INFO  [-] 2023-02-19 01:11:53,932 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-8 - Shutdown initiated...
+ 13356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-02-19T01:11:53.936-05:00 INFO  [-] 2023-02-19 01:11:53,936 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-8 - Shutdown completed.
+ 13356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-02-19T10:32:25.188-05:00 INFO  [-] 2023-02-19 10:32:25,188 [restartedMain] c.r.b.BuddyByDaylightApplication - Starting BuddyByDaylightApplication using Java 19.0.2 with PID 25136 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+ 25136 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Starting BuddyByDaylightApplication using Java 19.0.2 with PID 25136 (C:\Projects\spring-boot-workspace\BuddyByDaylight\target\classes started by tiffy in C:\Projects\spring-boot-workspace\BuddyByDaylight)
+2023-02-19T10:32:25.189-05:00 INFO  [-] 2023-02-19 10:32:25,189 [restartedMain] c.r.b.BuddyByDaylightApplication - No active profile set, falling back to 1 default profile: "default"
+ 25136 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T10:32:25.250-05:00 INFO  [-] 2023-02-19 10:32:25,250 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 25136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-19T10:32:25.250-05:00 INFO  [-] 2023-02-19 10:32:25,250 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 25136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-19T10:32:26.439-05:00 INFO  [-] 2023-02-19 10:32:26,439 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 25136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T10:32:26.532-05:00 INFO  [-] 2023-02-19 10:32:26,532 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+ 25136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+2023-02-19T10:32:27.305-05:00 INFO  [-] 2023-02-19 10:32:27,305 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 25136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-19T10:32:27.313-05:00 INFO  [-] 2023-02-19 10:32:27,313 [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+ 25136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-19T10:32:27.314-05:00 INFO  [-] 2023-02-19 10:32:27,314 [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+ 25136 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-19T10:32:27.376-05:00 INFO  [-] 2023-02-19 10:32:27,376 [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 25136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-19T10:32:27.377-05:00 INFO  [-] 2023-02-19 10:32:27,377 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2127 ms
+ 25136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2127 ms
+2023-02-19T10:32:27.633-05:00 INFO  [-] 2023-02-19 10:32:27,633 [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 25136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-19T10:32:28.002-05:00 INFO  [-] 2023-02-19 10:32:28,002 [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c325c7
+ 25136 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c325c7
+2023-02-19T10:32:28.006-05:00 INFO  [-] 2023-02-19 10:32:28,006 [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 25136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-19T10:32:28.361-05:00 INFO  [-] 2023-02-19 10:32:28,361 [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 25136 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T10:32:28.425-05:00 INFO  [-] 2023-02-19 10:32:28,425 [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 6.1.6.Final
+ 25136 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-19T10:32:28.698-05:00 WARN  [-] 2023-02-19 10:32:28,698 [restartedMain] o.h.o.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+ 25136 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T10:32:28.867-05:00 INFO  [-] 2023-02-19 10:32:28,867 [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 25136 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-19T10:32:29.714-05:00 INFO  [-] 2023-02-19 10:32:29,714 [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 25136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T10:32:29.722-05:00 INFO  [-] 2023-02-19 10:32:29,722 [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 25136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T10:32:30.127-05:00 WARN  [-] 2023-02-19 10:32:30,127 [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 25136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T10:32:30.301-05:00 INFO  [-] 2023-02-19 10:32:30,301 [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 25136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-19T10:32:30.934-05:00 WARN  [-] 2023-02-19 10:32:30,934 [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c787a640-dbed-4d74-ab38-80f69a694fa6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+ 25136 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c787a640-dbed-4d74-ab38-80f69a694fa6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-19T10:32:31.064-05:00 INFO  [-] 2023-02-19 10:32:31,064 [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+ 25136 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-19T10:32:31.077-05:00 INFO  [-] 2023-02-19 10:32:31,077 [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44242b27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da1689, org.springframework.security.web.context.SecurityContextHolderFilter@25e82fed, org.springframework.security.web.header.HeaderWriterFilter@7c43740b, org.springframework.web.filter.CorsFilter@3f97a559, org.springframework.security.web.csrf.CsrfFilter@118c5294, org.springframework.security.web.authentication.logout.LogoutFilter@3c3a3d36, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4de3df17, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c59d549, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6cbe527b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@144a2e24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d3a6f4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cfd78cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9a621d8, org.springframework.security.web.access.ExceptionTranslationFilter@3e40af98, org.springframework.security.web.access.intercept.AuthorizationFilter@57271881]
+ 25136 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44242b27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da1689, org.springframework.security.web.context.SecurityContextHolderFilter@25e82fed, org.springframework.security.web.header.HeaderWriterFilter@7c43740b, org.springframework.web.filter.CorsFilter@3f97a559, org.springframework.security.web.csrf.CsrfFilter@118c5294, org.springframework.security.web.authentication.logout.LogoutFilter@3c3a3d36, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4de3df17, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c59d549, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6cbe527b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@144a2e24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d3a6f4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cfd78cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9a621d8, org.springframework.security.web.access.ExceptionTranslationFilter@3e40af98, org.springframework.security.web.access.intercept.AuthorizationFilter@57271881]
+2023-02-19T10:32:31.145-05:00 INFO  [-] 2023-02-19 10:32:31,145 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 25136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-19T10:32:31.269-05:00 INFO  [-] 2023-02-19 10:32:31,269 [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 25136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-19T10:32:31.290-05:00 INFO  [-] 2023-02-19 10:32:31,290 [restartedMain] c.r.b.BuddyByDaylightApplication - Started BuddyByDaylightApplication in 6.577 seconds (process running for 7.53)
+ 25136 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 6.577 seconds (process running for 7.53)
+2023-02-19T10:32:31.515-05:00 INFO  [-] 2023-02-19 10:32:31,515 [RMI TCP Connection(2)-192.168.1.172] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 25136 --- [RMI TCP Connection(2)-192.168.1.172] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19T10:32:31.516-05:00 INFO  [-] 2023-02-19 10:32:31,516 [RMI TCP Connection(2)-192.168.1.172] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 25136 --- [RMI TCP Connection(2)-192.168.1.172] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-19T10:32:31.519-05:00 INFO  [-] 2023-02-19 10:32:31,519 [RMI TCP Connection(2)-192.168.1.172] o.s.w.s.DispatcherServlet - Completed initialization in 3 ms
+ 25136 --- [RMI TCP Connection(2)-192.168.1.172] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-02-19T10:34:27.197-05:00 INFO  [-] 2023-02-19 10:34:27,197 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 25136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T10:34:27.199-05:00 INFO  [-] 2023-02-19 10:34:27,199 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 25136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-19T10:34:27.205-05:00 INFO  [-] 2023-02-19 10:34:27,205 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 25136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

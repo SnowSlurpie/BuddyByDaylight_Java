@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import java.security.SecureRandom;
+
+//TODO:Redo Hashing
 
 @Controller
 public class UserController {
@@ -26,6 +31,10 @@ public class UserController {
     //controller for creating a new user
     @GetMapping("/users/new")
     public String showNewForm(Model model) {
+
+
+
+
         model.addAttribute("user", new User());
         model.addAttribute("pageTitle", "Add New User");
         return "user_form";
@@ -34,6 +43,13 @@ public class UserController {
     //controller for saving a new user to the db
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes ra) {
+
+        int strength = 10;
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(strength, new SecureRandom());
+        String hashPass = bCryptPasswordEncoder.encode(user.getPassword());
+        user.setPassword(hashPass);
+
+
         service.save(user);
         ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
         return "redirect:/users";
