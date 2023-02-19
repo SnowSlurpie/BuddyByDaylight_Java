@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface SurvivorRepository extends CrudRepository<Survivors, Integer> {
     //helps us with listing contents of table on associated html page
-    public Long countById(Integer survId);
+    public Long countBysurvId(Integer survId);
 
     Survivors findBysurvName(String survName);
 }

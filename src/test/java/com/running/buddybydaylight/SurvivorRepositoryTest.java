@@ -2,7 +2,6 @@ package com.running.buddybydaylight;
 
 import com.running.buddybydaylight.model.Survivors;
 import com.running.buddybydaylight.repository.SurvivorRepository;
-import com.running.buddybydaylight.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,7 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class SurvivorRepositoryTest{
+public class SurvivorRepositoryTest {
     @Autowired
     SurvivorRepository repo;
 
@@ -30,11 +29,11 @@ public class SurvivorRepositoryTest{
 
     @Test
     public void testCountById() {
-        UserRepository repo = mock(UserRepository.class);
-        when(repo.countById(1)).thenReturn(1L);
-        when(repo.countById(2)).thenReturn(0L);
-        assertEquals(1L, repo.countById(1).longValue());
-        assertEquals(0L, repo.countById(2).longValue());
+        SurvivorRepository repo = mock(SurvivorRepository.class);
+        when(repo.countBysurvId(1)).thenReturn(1L);
+        when(repo.countBysurvId(2)).thenReturn(0L);
+        assertEquals(1L, repo.countBysurvId(1).longValue());
+        assertEquals(0L, repo.countBysurvId(2).longValue());
     }
 
 }

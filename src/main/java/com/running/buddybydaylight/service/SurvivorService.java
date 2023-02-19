@@ -27,7 +27,7 @@ public class SurvivorService {
     public void createSurvivor(Survivors survivors) throws Exception{
         Survivors survExists = repo.findBysurvName((survivors.getSurvName()));
         if(survExists !=null){
-            throw new Exception("Account with that email already exists.");
+            throw new Exception("Survivor with that name already exists.");
         }
         repo.save(survivors);
     }
@@ -43,7 +43,7 @@ public class SurvivorService {
 
 
     public void delete(Integer id) throws UserNotFoundException {
-        Long count = repo.countById(id);
+        Long count = repo.countBysurvId(id);
         if (count == null || count == 0 ){
             throw new UserNotFoundException("Could not find any Survivors with ID " + id);
         }

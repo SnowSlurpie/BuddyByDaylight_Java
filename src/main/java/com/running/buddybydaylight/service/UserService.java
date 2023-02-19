@@ -30,7 +30,6 @@ public class UserService {
         }
         repo.save(user);
     }
-
 //    Exception Handling
     public User get(Integer id) throws UserNotFoundException {
         Optional<User> result = repo.findById(id);
