@@ -1,8 +1,6 @@
 package com.running.buddybydaylight;
 
-import com.running.buddybydaylight.model.Killers;
 import com.running.buddybydaylight.model.Survivors;
-import com.running.buddybydaylight.repository.KillerRepository;
 import com.running.buddybydaylight.repository.SurvivorRepository;
 import com.running.buddybydaylight.repository.UserRepository;
 import org.junit.jupiter.api.Test;
@@ -20,7 +18,7 @@ public class SurvivorRepositoryTest{
     SurvivorRepository repo;
 
     @Test
-    public void testFindBykName(){
+    public void testFindBysurvName(){
 
         String survName = "test";
         Survivors expected = new Survivors(500, "test","test","test");

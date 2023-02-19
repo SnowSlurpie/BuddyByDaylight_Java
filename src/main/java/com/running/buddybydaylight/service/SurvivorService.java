@@ -43,7 +43,7 @@ public class SurvivorService {
 
 
     public void delete(Integer id) throws UserNotFoundException {
-        Long count = repo.countBysurvId(id);
+        Long count = repo.countById(id);
         if (count == null || count == 0 ){
             throw new UserNotFoundException("Could not find any Survivors with ID " + id);
         }
