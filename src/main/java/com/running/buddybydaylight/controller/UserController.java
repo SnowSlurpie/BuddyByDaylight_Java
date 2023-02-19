@@ -14,7 +14,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.security.SecureRandom;
 
-//TODO:Redo Hashing
 
 @Controller
 public class UserController {
@@ -28,15 +27,11 @@ public class UserController {
         return "users";
     }
 
-    //controller for creating a new user
+    //controller for signup (aka new)
     @GetMapping("/users/new")
     public String showNewForm(Model model) {
-
-
-
-
         model.addAttribute("user", new User());
-        model.addAttribute("pageTitle", "Add New User");
+        model.addAttribute("pageTitle", "Sign Up!");
         return "user_form";
     }
 
