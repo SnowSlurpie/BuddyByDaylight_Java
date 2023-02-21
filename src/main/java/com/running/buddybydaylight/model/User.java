@@ -17,14 +17,8 @@ public class User {
     private String password;
     @Column(nullable = false, unique = true,length =45)
     private String userName;
-
-    public String getRole() {
-        return role;
-    }
-
-    private String role;
-
     private boolean enabled;
+
 
 
     //    TODO: Link builds to users?
@@ -35,7 +29,6 @@ public class User {
         this.email = email;
         this.password = password;
         this.userName = userName;
-        this.role = role;
     }
 
     public User() {
@@ -89,7 +82,6 @@ public class User {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", userName='" + userName + '\'' +
-                ", role='" + role + '\''+
                 '}';
 
 

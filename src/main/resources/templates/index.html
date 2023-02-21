@@ -4,46 +4,61 @@
     <meta charset="UTF-8">
     <title>Buddy By Daylight</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" >
-    <link rel="stylesheet" type="text/css" th:href="@{../static/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{../static/assets/css/style.css}">
 </head>
 <body>
 <!--nav bar -->
-<header>
-    <h1>Buddy By Daylight</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/survivors}">Survivors</a></li>
-            <li><a th:href="@{/killers}">Killers</a></li>
-            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
-            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
-        </ul>
-    </nav>
+<header class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <h1 class="h2">Buddy By Daylight</h1>
+            </div>
+            <div class="col-md-9">
+                <nav>
+                    <ul class="nav justify-content-end list-unstyled" >
+                        <li class="nav-item"><a class="nav-link" th:href="@{/survivors}">Survivors</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/killers}">Killers</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/shrine}">Shrine of Secrets</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/creatorBuilds}">Community Builds</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="container-fluid text-center">
-<h1>Welcome to Buddy By Daylight</h1>
-    <!--    Admin functionality eventually-->
+    <h1>Welcome to Buddy By Daylight</h1>
+    <!-- Admin functionality eventually -->
     <a class="h2" th:href="@{/users}">Manage Users Here!</a>
-<div>
-    <p>Buddy By Daylight is a fan-made website dedicated to the
-        popular survival horror game Dead by Daylight. Here, you can find
-        information about the killers and survivors.</p>
-</div>
+    <div class="mb-3">
+        <p>Buddy By Daylight is a fan-made website dedicated to the
+            popular survival horror game Dead by Daylight. Here, you can find
+            information about the killers and survivors.</p>
+    </div>
 
-<div>
-    <p>Whether you're a seasoned player or just starting out, we hope
-    you'll find the information and resources on our site helpful in
-    your journey to become a formidable foe in The Fog</p>
-</div>
+    <div class="mb-3">
+        <p>Whether you're a seasoned player or just starting out, we hope
+            you'll find the information and resources on our site helpful in
+            your journey to become a formidable foe in The Fog</p>
+    </div>
 
+    <div class="mb-3">
+        <a  th:href="@{/survivors}">Survivors</a>
+    </div>
 
-<a class="h2" th:href="@{/survivors}">Survivors</a>
+    <div class="mb-3">
+        <a  th:href="@{/killers}">Killers</a>
+    </div>
 
-<a class="h2" th:href="@{/killers}">Killers</a>
+    <div class="mb-3">
+        <a  th:href="@{/creatorBuilds}">Creator Builds</a>
+    </div>
 
-<a class="h2" th:href="@{/creatorBuilds}">Creator Builds</a>
-
-<a class="h2" th:href="@{/shrine}">Shrine of Secrets</a>
+    <div class="mb-3">
+        <a  th:href="@{/shrine}">Shrine of Secrets</a>
+    </div>
 
 </div>
 

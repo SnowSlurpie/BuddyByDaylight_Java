@@ -39,6 +39,8 @@ public class UserController {
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes ra) {
 
+
+//BCrypt saves hashed password to db
         int strength = 10;
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(strength, new SecureRandom());
         String hashPass = bCryptPasswordEncoder.encode(user.getPassword());
