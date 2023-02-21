@@ -34,6 +34,7 @@
 
             <tr>
                 <th>ID</th>
+                <th>Survivor Portrait</th>
                 <th>Survivor Name</th>
                 <th>Survivor's Description</th>
                 <th>Survivor's Perks</th>
@@ -47,6 +48,7 @@
 
                 <tr>
                     <td>[[${survivors.survId}]]</td>
+                    <td><img th:src="${survivors.survImg}" /></td>
                     <td>[[${survivors.survName}]]</td>
                     <td>[[${survivors.survDesc}]]</td>
                     <td>[[${survivors.survPerk}]]</td>

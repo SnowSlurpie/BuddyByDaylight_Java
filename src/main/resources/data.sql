@@ -50,11 +50,12 @@ VALUES('The Dredge','A twisted abomination manifested from the dark thoughts of 
 
 -- here is the information that is inserted into the survivors table
 
-INSERT INTO survivors(surv_name, surv_desc, surv_perk)
+INSERT INTO survivors(surv_name, surv_desc, surv_perk, image)
 VALUES('Steve Harrington',
-       'Popular and arrogant, yet compassionate, Steve Harrington is an unlikely mentor and leader. He often acts as a surrogate big brother to a younger boy named Dustin. He even helped him find his slimy inter-dimensional pet Demogorgon, D''Artagnan. His reputation as a protector grew and he soon became a sort of "babysitter" for a group of kids in Hawkins with a knack for messing around with strange and dangerous things. His courage is unmatched so that he was even able to fend off a Demogorgon when it threatened his friends. One evening he received a call for assistance from his friend Nancy Wheeler. He drove all the way to the Hawkins National Laboratory to see if she was okay. He searched the area but only found her notebook. Before he realised what was happening the ground opened up and a swirl of black mist filled his eyes. When he awakened he was in a strange place that seemed familiar but unfamiliar at the same time.', 'Second Wind');
+       'Popular and arrogant, yet compassionate, Steve Harrington is an unlikely mentor and leader. He often acts as a surrogate big brother to a younger boy named Dustin. He even helped him find his slimy inter-dimensional pet Demogorgon, D''Artagnan. His reputation as a protector grew and he soon became a sort of "babysitter" for a group of kids in Hawkins with a knack for messing around with strange and dangerous things. His courage is unmatched so that he was even able to fend off a Demogorgon when it threatened his friends. One evening he received a call for assistance from his friend Nancy Wheeler.He drove all the way to the Hawkins National Laboratory to see if she was okay. He searched the area but only found her notebook. Before he realised what was happening the ground opened up and a swirl of black mist filled his eyes. When he awakened he was in a strange place that seemed familiar but unfamiliar at the same time.',
+       'Second Wind','https://pbs.twimg.com/media/E5uUSq2WQAEZvkm?format=jpg&name=900x900');
 
-INSERT INTO survivors(surv_name, surv_desc, surv_perk)
+INSERT INTO survivors(surv_name, surv_desc, surv_perk, image)
 VALUES ('Cheryl Mason','Caring and impulsive, Cheryl Mason, previously known as Heather, attempted to rebuild her life after the tragic death of her adoptive father, Harry Mason.
 
 While she had freed herself from the religious cult that pursued her since birth, she was shackled by the guilt of her fathers death. A darkness punished her every night under the guise of abominable nightmares.
@@ -63,19 +64,20 @@ To ease her conscience, she volunteered at a crisis intervention centre for trou
 
 Why do you cling to this corrupt world? You know that only God can save us.
 
-It could not be her — Claudia was dead. Suddenly, the world spun and she dropped to her knees, nauseous. Hot bile travelled up her throat and she retched warm blood on the floor. Then the spinning stopped as swiftly as it began. Cheryl looked up and saw she was somewhere else. A cold, hopeless place.','Soul Guard');
+It could not be her — Claudia was dead. Suddenly, the world spun and she dropped to her knees, nauseous. Hot bile travelled up her throat and she retched warm blood on the floor. Then the spinning stopped as swiftly as it began. Cheryl looked up and saw she was somewhere else. A cold, hopeless place.','Soul Guard',
+        'https://cdn.vox-cdn.com/thumbor/1JAYrKeAIvNO1n44EV3TbXcqEvA=/0x0:1428x744/920x613/filters:focal(600x258:828x486):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71546725/TtG2F5K.0.png');
 
 
-INSERT INTO survivors(surv_name, surv_desc, surv_perk)
-VALUES('Thalita Lyra','A competitive person that just wants to bring people together-- she came into The Fog with her brother,Renato','Cut loose');
+INSERT INTO survivors(surv_name, surv_desc, surv_perk, image)
+VALUES('Thalita Lyra','A competitive person that just wants to bring people together-- she came into The Fog with her brother,Renato','Cut loose','https://preview.redd.it/v198pr6fndia1.jpg?width=512&format=pjpg&auto=webp&v=enabled&s=d7fb3962fa7b6d936808f38152b8bbf970fcc8f5');
 
-INSERT INTO survivors(surv_name, surv_desc, surv_perk)
-VALUES('Renato Lyra','A kind hearted man who is adept at blending in to the background -- he came into The Fog with his sister Thalita.','Blood Rush');
+INSERT INTO survivors(surv_name, surv_desc, surv_perk,image)
+VALUES('Renato Lyra','A kind hearted man who is adept at blending in to the background -- he came into The Fog with his sister Thalita.','Blood Rush','https://preview.redd.it/ecg5zr6fndia1.jpg?width=512&format=pjpg&auto=webp&v=enabled&s=1b455da19fde28b493cf5bfc28151d3249c8d2d3');
 
-INSERT INTO survivors(surv_name, surv_desc, surv_perk)
-VALUES('Mikaela Reid', 'A proud horror aficionado and admirer of the macabre, her supernatural touch has opened the door to new possibilities. Though some were initially wary, teammates quickly took to her alternative methods upon seeing the results.','Boon: Circle of Healing');
+INSERT INTO survivors(surv_name, surv_desc, surv_perk,image)
+VALUES('Mikaela Reid', 'A proud horror aficionado and admirer of the macabre, her supernatural touch has opened the door to new possibilities. Though some were initially wary, teammates quickly took to her alternative methods upon seeing the results.','Boon: Circle of Healing','https://cdna.artstation.com/p/assets/images/images/042/536/204/large/rafael-juarez-jr-mikaelathumbnail-render.jpg?1634761414');
 
--- here is the information that is inserted into the parks table
+-- here is the information that is inserted into the perks table
 
 -- Demo's Perks
 INSERT INTO perks(p_name, p_desc)

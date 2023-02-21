@@ -2,6 +2,8 @@ package com.running.buddybydaylight.model;
 
 import jakarta.persistence.*;
 
+import java.util.Arrays;
+
 
 //    survivor model containing each column of the table here
 @Entity
@@ -17,12 +19,17 @@ public class Survivors {
 
     private String survPerk;
 
+    @Column(name="image")
+    private String survImg;
+
     public Survivors(Integer survId, String survName, String survDesc, String survPerk) {
         this.survId = survId;
         this.survName = survName;
         this.survDesc = survDesc;
         this.survPerk = survPerk;
+        this.survImg = survImg;
     }
+
 
     public Survivors() {
     }
@@ -59,6 +66,14 @@ public class Survivors {
         this.survPerk = survPerk;
     }
 
+    public String getSurvImg() {
+        return survImg;
+    }
+
+    public void setSurvImg(String survImg) {
+        this.survImg = survImg;
+    }
+
     @Override
     public String toString() {
         return "Survivors{" +
@@ -66,6 +81,7 @@ public class Survivors {
                 ", survName='" + survName + '\'' +
                 ", survDesc='" + survDesc + '\'' +
                 ", survPerk='" + survPerk + '\'' +
+                ", survImg='" + survImg + '\'' +
                 '}';
     }
 

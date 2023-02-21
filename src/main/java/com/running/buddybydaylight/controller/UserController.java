@@ -2,6 +2,7 @@ package com.running.buddybydaylight.controller;
 
 import com.running.buddybydaylight.model.User;
 import com.running.buddybydaylight.exception.UserNotFoundException;
+import com.running.buddybydaylight.repository.UserRepository;
 import com.running.buddybydaylight.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,11 @@ import java.security.SecureRandom;
 public class UserController {
     @Autowired
     private UserService service;
+
+    @Autowired
+    private UserRepository userRepository;
+
+
 //controller for getting to users page
     @GetMapping("/users")
     public String showUserList(Model model) {

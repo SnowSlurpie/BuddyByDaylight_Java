@@ -1,22 +1,24 @@
 package com.running.buddybydaylight.controller;
 
 import com.running.buddybydaylight.exception.UserNotFoundException;
-import com.running.buddybydaylight.model.Killers;
 import com.running.buddybydaylight.model.Survivors;
+import com.running.buddybydaylight.repository.SurvivorRepository;
 import com.running.buddybydaylight.service.SurvivorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.io.IOException;
 
 @Controller
 public class SurvivorController {
 
     @Autowired
     private SurvivorService service;
+    @Autowired
+    private SurvivorRepository survivorRepository;
 
     //controller for getting to survivors page
         @GetMapping("/survivors")
@@ -71,5 +73,6 @@ public class SurvivorController {
         }
         return "redirect:/survivors";
     }
+
 }
 
