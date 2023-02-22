@@ -33,20 +33,20 @@ VALUES ('Mechanic Toolbox', 'A toolbox that can be used to repair Generators and
 
 -- here is the information that is inserted into the killers table
 
-INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk)
-VALUES ('The Demogorgon','A monstrous killer from the Upside Down.','Shred', 'The Demogorgon can charge and unleash a powerful attack that tears through objects.','Surge');
+INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk,image)
+VALUES ('The Demogorgon','A monstrous killer from the Upside Down.','Shred', 'The Demogorgon can charge and unleash a powerful attack that tears through objects.','Surge','https://pbs.twimg.com/media/EQBiF7YU0AAqaEy?format=jpg&name=large');
 
-INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk)
-VALUES ('The Skull Merchant', 'A self made millionaire that is able to place drones that detect and debilitate her targets','Eye in the Sky','The Skull Merchant relentlessly hunts her prey using the latest in surveillance technology','Game Afoot');
+INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk,image)
+VALUES ('The Skull Merchant', 'A self made millionaire that is able to place drones that detect and debilitate her targets','Eye in the Sky','The Skull Merchant relentlessly hunts her prey using the latest in surveillance technology','Game Afoot','https://pbs.twimg.com/media/FpLtXRlWAAcejCs?format=jpg&name=small');
 
-INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk)
-VALUES('The Trickster', 'A K-Pop idol turned murderer, he records the screams of his victims and mixes them into his new songs', 'Showstopper','A mesmerising skill honed through a lifetime of practice, Ji-Woon Hak unleashes a flurry of knives with rapid-fire speed.', 'Star Struck');
+INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk,image)
+VALUES('The Trickster', 'A K-Pop idol turned murderer, he records the screams of his victims and mixes them into his new songs', 'Showstopper','A mesmerising skill honed through a lifetime of practice, Ji-Woon Hak unleashes a flurry of knives with rapid-fire speed.', 'Star Struck','https://blog.turtlebeach.com/wp-content/uploads/2022/04/dbd-all-kill-wallpaper-trickster-small-logo.jpg');
 
-INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk)
-VALUES('The Executioner', 'A sadistic and  merciless executioner, Pyramid Head is fixated on dispensing punishment through pain.', 'Rites of Judgement', 'Open the Gates of Suffering and be judged! The Great Knife splits the ground, giving rise to an infernal construct and spreading agony to all who approach.', 'Trail of Torment');
+INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk,image)
+VALUES('The Executioner', 'A sadistic and  merciless executioner, Pyramid Head is fixated on dispensing punishment through pain.', 'Rites of Judgement', 'Open the Gates of Suffering and be judged! The Great Knife splits the ground, giving rise to an infernal construct and spreading agony to all who approach.', 'Trail of Torment','https://i1.sndcdn.com/artworks-IU82OruyHt4pVFd9-lh15sg-t500x500.jpg');
 
-INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk)
-VALUES('The Dredge','A twisted abomination manifested from the dark thoughts of a once vibrant community, it surrounds Survivors in darkness and appears to be everywhere at once.', 'Reign of Darkness','Throughout the match darkness will fall, allowing the Dredge to teleport between lockers throughout the map. Survivors will lose their vision as they hear the groans of your victims all around them.', 'Darkness Revealed');
+INSERT INTO killers (k_name, k_desc, power_name, power_desc, k_perk,image)
+VALUES('The Dredge','A twisted abomination manifested from the dark thoughts of a once vibrant community, it surrounds Survivors in darkness and appears to be everywhere at once.', 'Reign of Darkness','Throughout the match darkness will fall, allowing the Dredge to teleport between lockers throughout the map. Survivors will lose their vision as they hear the groans of your victims all around them.', 'Darkness Revealed','https://cdnb.artstation.com/p/assets/images/images/050/354/731/medium/eric-bourdages-highdef-p-templates-1600-dredge.jpg?1654653904');
 
 -- here is the information that is inserted into the survivors table
 

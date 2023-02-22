@@ -35,6 +35,7 @@
 <!--            Table column names-->
             <tr>
                 <th>ID</th>
+                <th>Killer Photo</th>
                 <th>Killer Name</th>
                 <th>Killer's Description</th>
                 <th>Killer's Power</th>
@@ -49,6 +50,7 @@
 
                 <tr>
                     <td>[[${killers.id}]]</td>
+                    <td><img th:src="${killers.kImg}" /></td>
                     <td>[[${killers.kName}]]</td>
                     <td>[[${killers.kDesc}]]</td>
                     <td>[[${killers.powerName}]]</td>

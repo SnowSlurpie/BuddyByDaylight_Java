@@ -27,6 +27,8 @@ public class Killers {
 
     @Column(nullable = false, unique = true)
     private String kPerk;
+    @Column(name="image")
+    private String kImg;
 
     public Killers(Integer id, String kName, String kDesc, String powerName, String powerDesc, String kPerk) {
         Id = id;
@@ -35,6 +37,15 @@ public class Killers {
         this.powerName = powerName;
         this.powerDesc = powerDesc;
         this.kPerk = kPerk;
+        this.kImg = kImg;
+    }
+
+    public String getkImg() {
+        return kImg;
+    }
+
+    public void setkImg(String kImg) {
+        this.kImg = kImg;
     }
 
     public Killers() {
@@ -97,6 +108,7 @@ public class Killers {
                 ", powerName='" + powerName + '\'' +
                 ", powerDesc='" + powerDesc + '\'' +
                 ", kPerk='" + kPerk + '\'' +
+                ", kImg='" + kImg + '\'' +
                 '}';
     }
 }
