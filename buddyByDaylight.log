@@ -3818,3 +3818,15 @@ This generated password is for development use only. Your security configuration
  19924 --- [restartedMain] c.r.b.BuddyByDaylightApplication         : Started BuddyByDaylightApplication in 1.128 seconds (process running for 5673.063)
 2023-02-22T16:39:59.325-05:00 INFO  [-] 2023-02-22 16:39:59,325 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
  19924 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-22T17:01:09.503-05:00 INFO  [-] 2023-02-22 17:01:09,503 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 19924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22T17:01:09.504-05:00 INFO  [-] 2023-02-22 17:01:09,504 [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 19924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-22T17:01:09.506-05:00 INFO  [-] 2023-02-22 17:01:09,506 [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 19924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-22T17:02:05.606-05:00 INFO  [-] 2023-02-22 17:02:05,606 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22T17:02:05.607-05:00 INFO  [-] 2023-02-22 17:02:05,607 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-32 - Shutdown initiated...
+ 19924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown initiated...
+2023-02-22T17:02:05.610-05:00 INFO  [-] 2023-02-22 17:02:05,610 [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-32 - Shutdown completed.
+ 19924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown completed.
