@@ -7,7 +7,7 @@ This app will allow a user to create an account as well as manage it. You will b
 This application is my capstone project and is meant to simply be an assignment. This product was not created with the intent of it being released (yet). 
 
 ## Table of Contents:
-- [Deployment Instructions(#Deployment)
+- [Deployment Instructions](#Deployment)
 - [Technologies Used](#Technologies)
 - [Aknowledgements](#Help)
 - [Contact](#Contact)
