@@ -4,10 +4,11 @@
     <title>Manage Survivors</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css">
     <link rel="stylesheet" type="text/css" th:href="@{../static/assets/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{../static/assets/css/style.css}">
 </head>
 <body>
 <!--nav bar -->
-<header class="bg-light">
+<header class="bg-light bg-opacity-75">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-3">
@@ -28,10 +29,10 @@
 </header>
 <div class="container-fluid text-center">
     <!-- Page header -->
-    <div><h2>Survivors Table</h2></div>
+    <div><h2 class="bg-white bg-opacity-75">Survivors Table</h2></div>
     <!-- Button to add a new survivor -->
     <div class="m-2">
-        <a class="h3 btn btn-primary" th:href="@{/survivors/new}">Add New Survivor!</a>
+        <a class="h3 btn btn-primary " th:href="@{/survivors/new}">Add New Survivor!</a>
     </div>
 
     <!-- Success message if a survivor was added/edited/deleted -->
@@ -41,7 +42,7 @@
 
     <!-- Table to display survivors -->
     <div>
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover bg-white bg-opacity-75">
             <!-- Table header -->
             <thead class="bg-dark text-white">
             <tr>
