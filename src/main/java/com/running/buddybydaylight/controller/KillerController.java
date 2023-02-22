@@ -15,58 +15,56 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class KillerController {
 
     @Autowired
-    private KillerService service;
+    private KillerService service; // Autowired instance of KillerService
 
+    // Controller for getting to the killers page
+    @GetMapping("/killers")
+    public String showKillerList(Model model) {
+        Iterable<Killers> listKillers = service.listAll(); // Retrieve all killers from the database
+        model.addAttribute("listKillers", listKillers); // Add the list of killers to the model
+        return "killers"; // Return the name of the view that should be rendered
+    }
 
-    //controller for getting to killers page
-        @GetMapping("/killers")
-        public String showKillerList(Model model)      {
-            Iterable<Killers> listKillers = service.listAll();
-            model.addAttribute("listKillers", listKillers);
-            return "killers";
-        }
-    //controller for creating a new killer
-        @GetMapping("/killers/new")
-        public String showNewForm(Model model) {
-            model.addAttribute("killer", new Killers());
-            model.addAttribute("pageTitle", "Add New Killer");
-            return "killer_form";
-        }
+    // Controller for creating a new killer
+    @GetMapping("/killers/new")
+    public String showNewForm(Model model) {
+        model.addAttribute("killer", new Killers()); // Add an empty instance of the Killers model to the model
+        model.addAttribute("pageTitle", "Add New Killer"); // Add the page title to the model
+        return "killer_form"; // Return the name of the view that should be rendered
+    }
 
-    //controller for saving a new killer to the db
+    // Controller for saving a new killer to the database
     @PostMapping("/killers/save")
     public String saveUser(Killers killer, RedirectAttributes ra) {
-        service.save(killer);
-        ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
-        return "redirect:/killers";
+        service.save(killer); // Save the new killer to the database
+        ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!"); // Add a flash message to the redirect attributes
+        return "redirect:/killers"; // Redirect to the killers page
     }
-    //controller for editing an existing killer based off of their id
+
+    // Controller for editing an existing killer based on their ID
     @GetMapping("/killers/edit/{id}")
-    public String showEditForm(@PathVariable("id") Integer id,
-                               Model model,
-                               RedirectAttributes ra) {
+    public String showEditForm(@PathVariable("id") Integer id, Model model, RedirectAttributes ra) {
         try {
-            Killers killer =service.get(id);
-            model.addAttribute("killer", killer);
-            model.addAttribute("pageTitle", "Edit Killer (ID: " + id + ")");
-            return "killer_form";
+            Killers killer = service.get(id); // Get the killer with the specified ID from the database
+            model.addAttribute("killer", killer); // Add the killer to the model
+            model.addAttribute("pageTitle", "Edit Killer (ID: " + id + ")"); // Add the page title to the model
+            return "killer_form"; // Return the name of the view that should be rendered
         } catch (UserNotFoundException e) {
-            ra.addFlashAttribute("message", e.getMessage());
-            return "redirect:/killers";
+            ra.addFlashAttribute("message", e.getMessage()); // Add a flash message to the redirect attributes
+            return "redirect:/killers"; // Redirect to the killers page
         }
     }
 
-    //controller for deleting an existing killer based off of their id
+    // Controller for deleting an existing killer based on their ID
     @GetMapping("/killers/delete/{id}")
-    public String deleteUser(@PathVariable("id") Integer id,
-                             RedirectAttributes ra) {
+    public String deleteUser(@PathVariable("id") Integer id, RedirectAttributes ra) {
         try {
-            service.delete(id);
-            ra.addFlashAttribute("message","The Killer with ID " + id + " has been successfully deleted! Well done USER!");
+            service.delete(id); // Delete the killer with the specified ID from the database
+            ra.addFlashAttribute("message","The Killer with ID " + id + " has been successfully deleted! Well done USER!"); // Add a flash message to the redirect attributes
         } catch (UserNotFoundException e) {
-            ra.addFlashAttribute("message", e.getMessage());
+            ra.addFlashAttribute("message", e.getMessage()); // Add a flash message to the redirect attributes
         }
-        return "redirect:/killers";
+        return "redirect:/killers"; // Redirect to the killers page
     }
 }
 

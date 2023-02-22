@@ -10,47 +10,49 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.IOException;
+
+// This is a controller class for handling survivor-related actions
 
 @Controller
 public class SurvivorController {
 
+    // Injecting SurvivorService and SurvivorRepository dependencies into the controller
     @Autowired
     private SurvivorService service;
     @Autowired
     private SurvivorRepository survivorRepository;
 
-    //controller for getting to survivors page
-        @GetMapping("/survivors")
-        public String showKillerList(Model model)      {
-            Iterable<Survivors> listSurvivors = service.listAll();
-            model.addAttribute("listSurvivors", listSurvivors);
-            return "survivors";
-        }
-    //controller for creating a new survivor
-        @GetMapping("/survivors/new")
-        public String showNewForm(Model model) {
-            model.addAttribute("survivors", new Survivors());
-            model.addAttribute("pageTitle", "Add New Survivor");
-            return "survivor_form";
-        }
+    //Controller for retrieving and displaying a list of survivors
+    @GetMapping("/survivors")
+    public String showSurvList(Model model) {
+        Iterable<Survivors> listSurvivors = service.listAll();
+        model.addAttribute("listSurvivors", listSurvivors);
+        return "survivors";
+    }
 
-    //controller for saving a new survivor to the db
+    //Controller for displaying the form to add a new survivor
+    @GetMapping("/survivors/new")
+    public String showNewForm(Model model) {
+        model.addAttribute("survivors", new Survivors());
+        model.addAttribute("pageTitle", "Add New Survivor");
+        return "survivor_form";
+    }
+
+    //Controller for saving a new survivor to the database
     @PostMapping("/survivors/save")
     public String saveUser(Survivors survivors, RedirectAttributes ra) {
         service.save(survivors);
-        ra.addFlashAttribute("message", "The user has been successfully saved! Congratulations!");
+        ra.addFlashAttribute("message", "The survivor has been successfully saved! Congratulations!");
         return "redirect:/survivors";
     }
 
-    //controller for editing an existing survivor based off of their id
-
+    //Controller for displaying the form to edit an existing survivor
     @GetMapping("/survivors/edit/{id}")
     public String showEditForm(@PathVariable("id") Integer id,
                                Model model,
                                RedirectAttributes ra) {
         try {
-            Survivors survivors =service.get(id);
+            Survivors survivors = service.get(id);
             model.addAttribute("survivors", survivors);
             model.addAttribute("pageTitle", "Edit Survivor (ID: " + id + ")");
             return "survivor_form";
@@ -60,14 +62,13 @@ public class SurvivorController {
         }
     }
 
-    //controller for deleting an existing survivor based off of their id
-
+    //Controller for deleting an existing survivor based on their id
     @GetMapping("/survivors/delete/{id}")
     public String deleteUser(@PathVariable("id") Integer id,
                              RedirectAttributes ra) {
         try {
             service.delete(id);
-            ra.addFlashAttribute("message","The Killer with ID " + id + " has been successfully deleted! Well done USER!");
+            ra.addFlashAttribute("message","The Survivor with ID " + id + " has been successfully deleted! Well done USER!");
         } catch (UserNotFoundException e) {
             ra.addFlashAttribute("message", e.getMessage());
         }

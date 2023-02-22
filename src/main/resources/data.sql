@@ -1,4 +1,4 @@
-
+-- 3.d
 -- here is the information that is inserted into the items table
 
 INSERT INTO items (item_name, item_desc)

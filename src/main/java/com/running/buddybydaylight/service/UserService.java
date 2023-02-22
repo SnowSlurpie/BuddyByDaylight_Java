@@ -9,19 +9,31 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+
+/*
+
+This is a service class for User entity which provides CRUD operations using UserRepository.
+It contains a UserRepository instance which is autowired and used to retrieve data from the database.
+The service layer encapsulates the data access layer, and provides a simpler interface for clients to interact with.
+*/
 @Service
 public class UserService {
 
-    @Autowired private UserRepository repo;
+    @Autowired
+    private UserRepository repo;
 
+    // Returns all users from the database.
     public Iterable<User> listAll() {
         return repo.findAll();
     }
 
+    // Saves a user entity to the database.
     public void save(User user){
         repo.save(user);
     }
 
+    // Creates a new user entity in the database.
+// Throws an exception if a user with the same email already exists.
     @Transactional
     public void createUser(User user) throws Exception{
         User userExists = repo.findByEmail((user.getEmail()));
@@ -30,7 +42,10 @@ public class UserService {
         }
         repo.save(user);
     }
-//    Exception Handling
+
+    // Returns a user entity with the given ID.
+// Throws an exception if no user entity with the given ID is found in the database.
+// Exception Handling
     public User get(Integer id) throws UserNotFoundException {
         Optional<User> result = repo.findById(id);
         if (result.isPresent()){
@@ -39,7 +54,8 @@ public class UserService {
         throw new UserNotFoundException("Could not find any users with ID" + id);
     }
 
-
+    // Deletes a user entity with the given ID from the database.
+// Throws an exception if no user entity with the given ID is found in the database.
     public void delete(Integer id) throws UserNotFoundException {
         Long count = repo.countById(id);
         if (count == null || count == 0 ){
