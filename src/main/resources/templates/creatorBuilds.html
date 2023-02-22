@@ -9,44 +9,111 @@
 <body>
 
 <!--nav bar -->
-<header>
-    <h1>Buddy By Daylight</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/index}">Home</a></li>
-            <li><a th:href="@{/survivors}">Survivors</a></li>
-            <li><a th:href="@{/killers}">Killers</a></li>
-            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
-        </ul>
-    </nav>
+<header class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a class="h2 text-decoration-none text-dark" href="/index">Buddy By Daylight</a>
+            </div>
+            <div class="col-md-9">
+                <nav>
+                    <ul class="nav justify-content-end list-unstyled" >
+                        <li class="nav-item"><a class="nav-link" th:href="@{/survivors}">Survivors</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/killers}">Killers</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/shrine}">Shrine of Secrets</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/creatorBuilds}">Community Builds</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 
-    <h1>Otzdarva's Creator Builds</h1>
-    <p>On this page, you'll find some awesome Dead by Daylight builds created by the popular content creator Otzdarva. Each build is accompanied by a video from Otzdarva's YouTube channel, where he explains the details of the build and demonstrates how it can be used effectively in the game.</p>
+<div class="container my-5">
+    <h1 class="text-center">Otzdarva's Creator Builds</h1>
 
-<!--below are otz's videos-->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
 
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/y4JqfW2izBs" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Build 1 -->
+        <div class="col">
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/y4JqfW2izBs" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Build 1</h2>
+                    <p class="card-text">Description of build 1.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Build 2 -->
+        <div class="col">
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ZXMcb-PM_TE" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Build 2</h2>
+                    <p class="card-text">Description of build 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Build 3 -->
+        <div class="col">
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/bzbiT0NO-1w" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Build 3</h2>
+                    <p class="card-text">Description of build 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Build 4 -->
+        <div class="col">
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/VmCnioRVizY" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Build 4</h2>
+                    <p class="card-text">Description of build 4.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
 
+<h2 class="text-center">Featured Dead by Daylight Streamers</h2>
+<p class="text-center">Here are some featured Dead By Daylight streamers from our community!</p>
 
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXMcb-PM_TE" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5257c645-0323-456c-934a-f37b1cbad8db-profile_image-70x70.png" class="card-img-top" alt="Streamer 1">
+            <div class="card-body">
+                <h5 class="card-title">SnowSlurpie</h5>
+                <p class="card-text">Check out SnowSlurpie's Dead by Daylight streams on Twitch.</p>
+                <a href="https://www.twitch.tv/snowslurpie" class="btn btn-primary">Visit Channel</a>
+            </div>
+        </div>
     </div>
-
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/bzbiT0NO-1w" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/26bf1aa1-297b-40bf-aea0-0925a4a87777-profile_image-150x150.png" class="card-img-top" alt="Streamer 2">
+            <div class="card-body">
+                <h5 class="card-title">Streamer 2</h5>
+                <p class="card-text">Check out Diddles5's Dead by Daylight streams on Twitch.</p>
+                <a href="https://www.twitch.tv/diddles5" class="btn btn-primary">Visit Channel</a>
+            </div>
+        </div>
     </div>
-
-
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VmCnioRVizY" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
+</div>
 </body>
 </html>

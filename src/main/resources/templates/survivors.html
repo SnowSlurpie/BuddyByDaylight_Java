@@ -7,31 +7,43 @@
 </head>
 <body>
 <!--nav bar -->
-<header>
-    <h1>Buddy By Daylight</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/index}">Home</a></li>
-            <li><a th:href="@{/killers}">Killers</a></li>
-            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
-            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
-        </ul>
-    </nav>
+<header class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a class="h2 text-decoration-none text-dark" href="/index">Buddy By Daylight</a>
+            </div>
+            <div class="col-md-9">
+                <nav>
+                    <ul class="nav justify-content-end list-unstyled" >
+                        <li class="nav-item"><a class="nav-link" th:href="@{/survivors}">Survivors</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/killers}">Killers</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/shrine}">Shrine of Secrets</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/creatorBuilds}">Community Builds</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 <div class="container-fluid text-center">
+    <!-- Page header -->
     <div><h2>Survivors Table</h2></div>
+    <!-- Button to add a new survivor -->
     <div class="m-2">
-        <a class="h3 " th:href="@{/survivors/new}">Add New Survivor!</a>
+        <a class="h3 btn btn-primary" th:href="@{/survivors/new}">Add New Survivor!</a>
     </div>
 
+    <!-- Success message if a survivor was added/edited/deleted -->
     <div th:if="${message}" class="alert alert-success text-center">
         [[${message}]]
     </div>
-    <div>
-        <table class="table table-bordered">
-            <thead class="bg-dark text-white">
-            <!--            Table column names-->
 
+    <!-- Table to display survivors -->
+    <div>
+        <table class="table table-bordered table-striped table-hover">
+            <!-- Table header -->
+            <thead class="bg-dark text-white">
             <tr>
                 <th>ID</th>
                 <th>Survivor Portrait</th>
@@ -42,27 +54,23 @@
             </tr>
             </thead>
             <tbody>
-            <!--Data that is inserted into the table according to column names-->
-
+            <!-- Rows to display data for each survivor in the list -->
             <th:block th:each="survivors : ${listSurvivors}">
-
                 <tr>
                     <td>[[${survivors.survId}]]</td>
-                    <td><img th:src="${survivors.survImg}" /></td>
+                    <td><img class="img-thumbnail" th:src="${survivors.survImg}" /></td>
                     <td>[[${survivors.survName}]]</td>
                     <td>[[${survivors.survDesc}]]</td>
                     <td>[[${survivors.survPerk}]]</td>
+                    <!-- Links to edit or delete the current survivor -->
                     <td>
                         <a class="h4 me-4" th:href="@{'/survivors/edit/' + ${survivors.survId}}">Edit</a>
                         <a class="h4" th:href="@{'/survivors/delete/' + ${survivors.survId}}">Delete</a>
                     </td>
                 </tr>
-
             </th:block>
-
             </tbody>
         </table>
-
     </div>
 </div>
 </body>

@@ -8,66 +8,66 @@
 <body>
 
 <!--nav bar -->
-<header>
-    <h1>Buddy By Daylight</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/index}">Home</a></li>
-            <li><a th:href="@{/survivors}">Survivors</a></li>
-            <li><a th:href="@{/shrine}">Shrine of Secrets</a></li>
-            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
-        </ul>
-    </nav>
+<header class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a class="h2 text-decoration-none text-dark" href="/index">Buddy By Daylight</a>
+            </div>
+            <div class="col-md-9">
+                <nav>
+                    <ul class="nav justify-content-end list-unstyled" >
+                        <li class="nav-item"><a class="nav-link" th:href="@{/survivors}">Survivors</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/killers}">Killers</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/shrine}">Shrine of Secrets</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/creatorBuilds}">Community Builds</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
-
 <div class="container-fluid text-center">
     <div><h2>Killers Table</h2></div>
     <div class="m-2">
-        <a class="h3 " th:href="@{/killers/new}">Add New Killer</a>
+        <a class="h3 btn btn-primary" th:href="@{/killers/new}">Add New Killer</a>
     </div>
-
-    <div th:if="${message}" class="alert alert-success text-center">
-        [[${message}]]
-    </div>
-    <div>
-        <table class="table table-bordered">
-            <thead class="bg-dark text-white">
-<!--            Table column names-->
+<div th:if="${message}" class="alert alert-success text-center">
+    [[${message}]]
+</div>
+<div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="bg-dark text-white">
+        <tr>
+            <th>ID</th>
+            <th>Killer Photo</th>
+            <th>Killer Name</th>
+            <th>Killer's Description</th>
+            <th>Killer's Power</th>
+            <th>Power Description</th>
+            <th>Perks</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="killers : ${listKillers}">
             <tr>
-                <th>ID</th>
-                <th>Killer Photo</th>
-                <th>Killer Name</th>
-                <th>Killer's Description</th>
-                <th>Killer's Power</th>
-                <th>Power Description</th>
-                <th>Perks</th>
-                <th></th>
+                <td>[[${killers.id}]]</td>
+                <td><img class="img-thumbnail" th:src="${killers.kImg}" /></td>
+                <td>[[${killers.kName}]]</td>
+                <td>[[${killers.kDesc}]]</td>
+                <td>[[${killers.powerName}]]</td>
+                <td>[[${killers.powerDesc}]]</td>
+                <td>[[${killers.kPerk}]]</td>
+                <td>
+                    <a class="btn btn-sm btn-warning me-2" th:href="@{'/killers/edit/' + ${killers.id}}">Edit</a>
+                    <a class="btn btn-sm btn-danger" th:href="@{'/killers/delete/' + ${killers.id}}">Delete</a>
+                </td>
             </tr>
-            </thead>
-            <tbody>
-<!--Data that is inserted into the table according to column names-->
-            <th:block th:each="killers : ${listKillers}">
-
-                <tr>
-                    <td>[[${killers.id}]]</td>
-                    <td><img th:src="${killers.kImg}" /></td>
-                    <td>[[${killers.kName}]]</td>
-                    <td>[[${killers.kDesc}]]</td>
-                    <td>[[${killers.powerName}]]</td>
-                    <td>[[${killers.powerDesc}]]</td>
-                    <td>[[${killers.kPerk}]]</td>
-                    <td>
-                        <a class="h4 me-4" th:href="@{'/killers/edit/' + ${killers.id}}">Edit</a>
-                        <a class="h4" th:href="@{'/killers/delete/' + ${killers.id}}">Delete</a>
-                    </td>
-                </tr>
-
-            </th:block>
-
-            </tbody>
-        </table>
-
-    </div>
+        </th:block>
+        </tbody>
+    </table>
+</div>
 </div>
 </body>
 </html>

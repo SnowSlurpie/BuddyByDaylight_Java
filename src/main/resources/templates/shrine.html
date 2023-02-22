@@ -8,20 +8,65 @@
 </head>
 <body>
 <!--Nav Bar-->
-<header>
-    <h1>Buddy By Daylight</h1>
-    <nav>
-        <ul>
-            <li><a th:href="@{/index}">Home</a></li>
-            <li><a th:href="@{/survivors}">Survivors</a></li>
-            <li><a th:href="@{/killers}">Killers</a></li>
-            <li><a th:href="@{/creatorBuilds}">Community Builds</a></li>
-        </ul>
-    </nav>
+<header class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a class="h2 text-decoration-none text-dark" href="/index">Buddy By Daylight</a>
+            </div>
+            <div class="col-md-9">
+                <nav>
+                    <ul class="nav justify-content-end list-unstyled" >
+                        <li class="nav-item"><a class="nav-link" th:href="@{/survivors}">Survivors</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/killers}">Killers</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/shrine}">Shrine of Secrets</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/creatorBuilds}">Community Builds</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 
-<h1>Shrine of Secrets</h1>
 
-<p>THIS PAGE IS UNDER CONSTRUCTION PLEASE LEAVE THANKS</p>
+<div class="container">
+    <p class="lead text-center">The following are the current perks available in the Shrine of Secrets:</p>
+</div>
+
+<div class="container">
+    <p class="lead text-center">The Shrine of Secrets resets every Wednesday at 00:00:00 UTC (GMT+0)</p>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-lg">
+            <img class="card-img-top" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a391f17-8755-4741-a7ef-45fd2e9e32df/dbwp4pt-ffb20645-27a0-488a-8291-3ca4740df984.jpg/v1/fill/w_1280,h_720,q_75,strp/dbd_8d__devour_hope__by_craignacroixart_dbwp4pt-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVhMzkxZjE3LTg3NTUtNDc0MS1hN2VmLTQ1ZmQyZTllMzJkZlwvZGJ3cDRwdC1mZmIyMDY0NS0yN2EwLTQ4OGEtODI5MS0zY2E0NzQwZGY5ODQuanBnIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC81YTM5MWYxNy04NzU1LTQ3NDEtYTdlZi00NWZkMmU5ZTMyZGZcL2NyYWlnbmFjcm9peGFydC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.DqDUwNNjGBzFmwCh9Eq3Dia8n7Zzmv5yOp_55ouNpWE" alt="Hex: Devour Hope">
+            <div class="card-body">
+                <h5 class="card-title">Hex: Devour Hope</h5>
+                <p class="card-text">A hex rooting its power on hope. The false hope of Survivors ignites your hunger. When a Survivor is rescued from a hook at least 24 metres away, Devour Hope receives a token. 2 Tokens: Gain a 3 / 4 / 5 % Haste Status Effect for 10 seconds after hooking a Survivor. 3 Tokens: Survivors suffer from the Exposed Status Effect. 4 Tokens: You are granted the ability to kill Survivors by your own hand.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-lg">
+            <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/009/990/874/medium/craig-nacroix-cropped-1920-1080-910560.jpg?1521983713" alt="Ace in the Hole">
+            <div class="card-body">
+                <h5 class="card-title">Ace in the Hole</h5>
+                <p class="card-text">Lady Luck always seems to be throwing something good your way. Anytime you loot an Item from a Chest, there is a 50 / 75 / 100 % chance that an Add-on of Very Rare Rarity or lower will also be attached to it.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-5">
+        <div class="card shadow-lg">
+            <img class="card-img-top" src="https://cdnb.artstation.com/p/assets/images/images/028/665/049/medium/craig-cyrax-soul-guard-5.jpg?1595151099" alt="Soul Guard">
+            <div class="card-body">
+                <h5 class="card-title">Soul Guard</h5>
+                <p class="card-text">You have been through immense hardship, and you're stronger for it. After performing a Safe Hook Rescue on another Survivor, the Perk activates. You now have the Broken Status Effect. While this Perk is active, any time you heal a Survivor from the Dying State to Injured, or the Injured State to Healthy, the healed Survivor gains the Endurance Status Effect for a duration of 4 seconds.</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

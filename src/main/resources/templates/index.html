@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-3">
-                <h1 class="h2">Buddy By Daylight</h1>
+                <a class="h2 text-decoration-none text-dark" href="/index">Buddy By Daylight</a>
             </div>
             <div class="col-md-9">
                 <nav>
@@ -29,39 +29,62 @@
 </header>
 
 <div class="container-fluid text-center">
-    <h1>Welcome to Buddy By Daylight</h1>
-    <!-- Admin functionality eventually -->
-    <a class="h2" th:href="@{/users}">Manage Users Here!</a>
-    <div class="mb-3">
-        <p>Buddy By Daylight is a fan-made website dedicated to the
-            popular survival horror game Dead by Daylight. Here, you can find
-            information about the killers and survivors.</p>
-    </div>
 
-    <div class="mb-3">
-        <p>Whether you're a seasoned player or just starting out, we hope
-            you'll find the information and resources on our site helpful in
-            your journey to become a formidable foe in The Fog</p>
-    </div>
+    <h1 class="display-4 my-5" id="welcome-message"></h1>
 
-    <div class="mb-3">
-        <a  th:href="@{/survivors}">Survivors</a>
-    </div>
+    <script th:inline="javascript">
+        let welcomeMessage = "Welcome to Buddy By Daylight";
+        let welcomeEl = document.getElementById("welcome-message");
 
-    <div class="mb-3">
-        <a  th:href="@{/killers}">Killers</a>
-    </div>
+        function typeMessage(message, element, delay) {
+            for (let i = 0; i < message.length; i++) {
+                (function(index) {
+                    setTimeout(function() {
+                        element.innerHTML += message[index];
+                    }, delay * index);
+                })(i);
+            }
+        }
 
-    <div class="mb-3">
-        <a  th:href="@{/creatorBuilds}">Creator Builds</a>
-    </div>
+        typeMessage(welcomeMessage, welcomeEl, 100);
+    </script>
 
-    <div class="mb-3">
-        <a  th:href="@{/shrine}">Shrine of Secrets</a>
-    </div>
 
+    <a class="h2 mb-5" th:href="@{/users}">Manage Users Here!</a>
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-12">
+            <p class="lead">Buddy By Daylight is a fan-made website dedicated to the
+                popular survival horror game Dead by Daylight. Here, you can find
+                information about the killers and survivors.</p>
+        </div>
+        <div class="col-md-12">
+            <p class="lead">Whether you're a seasoned player or just starting out, we hope
+                you'll find the information and resources on our site helpful in
+                your journey to become a formidable foe in The Fog.</p>
+        </div>
+    </div>
 </div>
 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center my-5"><a th:href="@{/survivors}" class="text-decoration-none text-dark">Survivors</a></h1>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center my-5"><a th:href="@{/killers}" class="text-decoration-none text-dark">Killers</a></h1>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center my-5"><a th:href="@{/creatorBuilds}" class="text-decoration-none text-dark">Creator Builds</a></h1>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center my-5"><a th:href="@{/shrine}" class="text-decoration-none text-dark">Shrine of Secrets</a></h1>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; Buddy By Daylight 2023</p>
+</footer>
 </body>
 </html>
 
